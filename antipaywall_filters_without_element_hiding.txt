@@ -1,9 +1,9 @@
-[Adblock Plus 2.0]
-! Title: ✋ Antipaywall filters (without element hiding)
+[Adblock Plus 3.6]
+! Title: ✋ Antipaywall filters (without element hiding) for ABP
 ! Description: Curated list of antipaywall requests
 ! Updated: 10 October 2023
 ! License: https://creativecommons.org/licenses/by/3.0
-! Homepage: https://github.com/yokoffing/filterlists
+! Homepage: https://github.com/Metrokoto/filterlists
 ! Expires: 7 days (update frequency)
 
 ! from https://github.com/liamengland1/miscfilters/blob/master/antipaywall.txt [April 2023]
@@ -22,14 +22,14 @@
 ||smartlock.google.com^
 /amp-access-$script
 ||tinypass.com^$third-party
-! @@||experience.tinypass.com/xbuilder/$script,3p
+! @@||experience.tinypass.com/xbuilder/$script,third-party
 ||mediapass.com^$third-party
 ||scroll.com^$third-party
 ||wallkit.net^$third-party
 ||evolok.com^$third-party
 ||evolok.net^$third-party
 ||piano.io^$third-party
-||qiota.com^$third-party,important
+||qiota.com^$third-party
 ||poool.fr^$third-party
 ||onecount.net^$third-party
 ||profitwell.com^$third-party
@@ -58,9 +58,8 @@
 ||cloudfront.net/prod/cloudfrontVideoTracker.png
 /arc/subs/p.min.js$~third-party
 ||bostonglobe.com/pf/resources/dist/third-party.js
-@@||meter.bostonglobe.com^$script,1p
-bostonglobe.com##+js(set, bg.page.exemptFromMeter, true)
-@@||bostonglobe.com/api/v1/setCookie$xhr,1p
+@@||meter.bostonglobe.com^$script,~third-party
+@@||bostonglobe.com/api/v1/setCookie$~third-party
 ||qz.com/api/site/behavior
 ||aw1.accuradio.com^
 ||accuradio.tritondigital.com^
@@ -79,8 +78,8 @@ bostonglobe.com##+js(set, bg.page.exemptFromMeter, true)
 ||rcimages.xyz^$third-party
 ||newsmemory.com/*/ads/?rotator_all=$subdocument
 ||newsmemory.com/?prebid=
-||vidazoo.com^$3p
-||vidible.tv^$3p,domain=abqjournal.com
+||vidazoo.com^$third-party
+||vidible.tv^$third-party,domain=abqjournal.com
 ||nzherald.co.nz/arc/subs/p.js
 ||theladders.com/api/auth/is-logged-in
 ||harpers.org^*/pum/
@@ -114,7 +113,7 @@ bostonglobe.com##+js(set, bg.page.exemptFromMeter, true)
 ! https://gitlab.com/magnolia1234/bypass-paywalls-clean-filters/-/blob/main/bpc-paywall-filter.txt [April 2023]
 ||axate.io$script,third-party
 ||blueconic.net^$third-party
-||cdn.cxense.com^$script,third-party,important
+||cdn.cxense.com^$script,third-party
 ||ensighten.com/*/Bootstrap.js$script,third-party
 ||paywall.fewcents.co/static/js/paywall.js
 ||hadrianpaywall.com^$third-party
@@ -123,10 +122,9 @@ bostonglobe.com##+js(set, bg.page.exemptFromMeter, true)
 ||newsmemory.com?meter$third-party
 ||olytics.omeda.com^$third-party
 @@||piano.io^$domain=asia.nikkei.com|japantimes.co.jp|kurier.at|onet.pl
-||api.pico.tools/client/query/*$xmlhttprequest,~third-party
-||api.pico.tools/popup/null/*$xmlhttprequest,~third-party
-gadget.pico.tools##+js(json-prune, locked)
-||qiota.com^$xmlhttprequest,third-party
+||api.pico.tools/client/query/*$~third-party
+||api.pico.tools/popup/null/*$~third-party
+||qiota.com^$third-party
 ||steadyhq.com^$script,third-party
 ||tribdss.com^$third-party
 ||weborama.fr/js/$script,third-party
@@ -142,11 +140,11 @@ gadget.pico.tools##+js(json-prune, locked)
 ||abril.com.br/*/abril-paywall/$script,~third-party
 ||ajc.com/prod/ajc/loader.min.js$script,~third-party
 ||americanaffairsjournal.org/wp-content/mu-plugins/app/src/paywall/paywall.js$script,~third-party
-||artnet.com/paywall-ajax.php$xmlhttprequest,~third-party
+||artnet.com/paywall-ajax.php$~third-party
 ||assets.bizjournals.com/static/js/app/cxense.js$script,~third-party
 ||automobilwoche.de/s3fs-public/js/js_nCw*.js$script,~third-party
 ||assets.bwbx.io/s3/javelin/public/javelin/js/foundation/transporter/foundation_transporter-*.js$script,domain=bloomberg.com
-||bloombergadria.com/*/news/$inline-script
+||bloombergadria.com/*/news/$script
 ||meter.bostonglobe.com/js/meter.js$script,~third-party
 ||chronicle.com/script.js$script,~third-party
 ||philanthropy.com/script.js$script,~third-party
@@ -169,7 +167,7 @@ gadget.pico.tools##+js(json-prune, locked)
 ||indianexpress.com/*/indianexpress/js/evolok/*.js$script,~third-party
 ||indianexpress.com/*/indianexpress/min/premiumContent.js$script,~third-party
 ||jpost.com/js/js_article.min.js$script,~third-party
-||internazionale.it/templates_js_ajax.inc.php$xmlhttprequest,~third-party
+||internazionale.it/templates_js_ajax.inc.php$~third-party
 ||la-croix.com/build/*/paywall*.js$script,~third-party
 ||glanacion.com/*/metering/*.js$script,domain=lanacion.com.ar
 ||lasegunda.com/assets/js/merPramV2.js$script,~third-party
@@ -185,11 +183,11 @@ gadget.pico.tools##+js(json-prune, locked)
 ||blink.net/*/blink-sdk.js$script,domain=newrepublic.com
 ||newstatesman.com/*/nsmg-evolok-paywall/*.js$script,~third-party
 ||nola.com/script.js$script,~third-party
-||nrc.nl/paywall-api/api/zephr$xmlhttprequest,~third-party
-||nybooks.com/wp-admin/admin-ajax.php$xmlhttprequest,~third-party
+||nrc.nl/paywall-api/api/zephr$~third-party
+||nybooks.com/wp-admin/admin-ajax.php$~third-party
 ||nyteknik.se/*/static/js/site.min.js$script,~third-party
 ||mwcm.nyt.com/$script,domain=nytimes.com
-||cooking.nytimes.com/api/*/access$xmlhttprequest,~third-party
+||cooking.nytimes.com/api/*/access$~third-party
 ||kinja-static.com/assets/*/regwalled-content.*.js$script,domain=qz.com
 ||reuters.com/pf/resources/dist/reuters/js/index.js$script,~third-party
 ||seattletimes.com/wp-content/*/st-advertising-bundle.js$script,~third-party
@@ -207,15 +205,15 @@ gadget.pico.tools##+js(json-prune, locked)
 ||thesaturdaypaper.com.au/sites/all/modules/custom/node_meter/pw.js$script,~third-party
 ||time.com/dist/meter-wall-client-js.*.js$script,~third-party
 ||timeshighereducation.com/sites/default/files/*/js__*.js$script,~third-party
-||account.winnipegfreepress.com/api/v*/auth/identify$xmlhttprequest,~third-party
+||account.winnipegfreepress.com/api/v*/auth/identify$~third-party
 ||amazonaws.com/s3fs-public/js/js_$script,domain=genomeweb.com|360dx.com|precisiononcologynews.com
 ||flowerstreatment.com^$third-party
 ||substackcdn.com/min/main.bundle.js$script,domain=codebeautify.org|jsonformatter.org|html.onlineviewer.net
 .com/webfiles/*/js/metering.js$script,third-party,domain=hbook.com|libraryjournal.com|slj.com
-||20minutes.fr/v-ajax/subscribe-modal$xmlhttprequest,~third-party
-||account.brandonsun.com/api/v*/auth/identify$xmlhttprequest,~third-party
+||20minutes.fr/v-ajax/subscribe-modal$~third-party
+||account.brandonsun.com/api/v*/auth/identify$~third-party
 ||paywall.correiodopovo.com.br$script,~third-party
-||meter.in.bonhill.pbc.io/api/views$xmlhttprequest,domain=investmentnews.com
+||meter.in.bonhill.pbc.io/api/views$domain=investmentnews.com
 ||irishexaminer.com/pu_examiner/scripts/engage/$script,~third-party
 ||newbostonpost.com/*/paywall/js/main.js$script,~third-party
 ||my.odt.co.nz/bwtw/scripts/tw.js$script,~third-party
@@ -224,41 +222,7 @@ gadget.pico.tools##+js(json-prune, locked)
 ||accesstype.com/frontend/v2/accesstype.js$script,domain=swarajyamag.com
 ||thedriftmag.com/wp-content/plugins/drift-paywall-plugin/public/js/drift-paywall-plugin-public.js$script,~third-party
 ||subs.theepochtimes.com/lib/api.bundle.js$script,~third-party
-@@||tweakers.nl/json$xmlhttprequest,domain=tweakers.net
-
-ambito.com##+js(cookie-remover, TDNotesRead)
-artforum.com##+js(cookie-remover, /^/)
-bloomberg.com##+js(cookie-remover, gatehouse_id, stay)
-cen.acs.org##+js(cookie-remover, paywall-cookie)
-corrieredellosport.it##+js(cookie-remover, /paywall_articles/)
-groene.nl##+js(cookie-remover, rlist)
-harpers.org##+js(cookie-remover, hr_session)
-hbrtaiwan.com##+js(cookie-remover, guest)
-japantimes.co.jp##+js(cookie-remover, /xbc/)
-lanacion.com.ar##+js(cookie-remover, /^metering_arc/)
-ledevoir.com##+js(cookie-remover, pw6)
-labusinessjournal.com##+js(cookie-remover, /^/)
-loebclassics.com##+js(cookie-remover, /^/)
-mv-voice.com##+js(cookie-remover, /^/)
-nautil.us##+js(cookie-remover, /^(arc|sfa)$/)
-nknews.org##+js(cookie-remover, /^issuem_lp/)
-nrc.nl##+js(cookie-remover, counter)
-paloaltoonline.com##+js(cookie-remover, /^/)
-philosophynow.org##+js(cookie-remover, /^/)
-scientificamerican.com##+js(cookie-remover, /^/)
-sofrep.com##+js(cookie-remover, sofrep_news_ids)
-spectator.co.uk##+js(cookie-remover, /blaize_session/)
-tes.com##+js(cookie-remover, /tg_paywall/)
-theatlantic.com##+js(cookie-remover, articleViews)
-thediplomat.com##+js(cookie-remover, dpl-pw)
-thepointmag.com##+js(cookie-remover, monthly_history)
-thesaturdaypaper.com.au##+js(cookie-remover, /^/)
-onet.pl##+js(cookie-remover, /xbc/)
-psypost.org##+js(cookie-remover, issuem_lp)
-realmoney.thestreet.com##+js(cookie-remover, /^PWT/)
-
-! New York Magazine
-curbed.com,grubstreet.com,nymag.com,thecut.com,vulture.com##+js(cookie-remover, /nymcid$/)
+@@||tweakers.nl/json$domain=tweakers.net
 
 ! General (amp)
 ||cdn.ampproject.org/*/amp-subscriptions-$script
