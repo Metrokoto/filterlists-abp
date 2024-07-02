@@ -690,7 +690,7 @@ livescience.com##.buttons-social
 kellegram.xyz##.socials
 
 ! AUDIO/VIDEO PLAYERS
-! ||remixd.com^$3p
+! ||remixd.com^$third-party
 ! https://www.gq.com/story/jason-belmonte-bowling-profile
 ||player.cnevids.com^
 ! https://www.ghacks.net/2023/07/04/firefox-115-new-esr-base-and-some-add-ons-may-be-blocked-from-running-on-certain-sites
@@ -720,7 +720,7 @@ kellegram.xyz##.socials
 delish.com##.video-player, .journey-unblur-content
 ! Brightcove
 ||brightcove.net^$third-party
-@@||brightcove.^
+@@||brightcove.^$other
 @@||media.brightcove.com^$image
 @@||media.brightcove.com^$media,domain=players.brightcove.net
 @@||players.brightcove.net^$script
