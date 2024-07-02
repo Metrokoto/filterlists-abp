@@ -1,3 +1,5 @@
+This fork aims to fix the syntax to fully support AdBlock Plus.
+
 ![GitHub last commit](https://img.shields.io/github/last-commit/yokoffing/filterlists)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/yokoffing/filterlists)
 ![GitHub Maintained](https://img.shields.io/badge/Open%20Source-Yes-orange)
