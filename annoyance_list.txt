@@ -720,7 +720,7 @@ kellegram.xyz##.socials
 delish.com##.video-player, .journey-unblur-content
 ! Brightcove
 ||brightcove.net^$third-party
-@@||brightcove.^$other
+@@||brightcove.^
 @@||media.brightcove.com^$image
 @@||media.brightcove.com^$media,domain=players.brightcove.net
 @@||players.brightcove.net^$script
@@ -800,7 +800,7 @@ delish.com##.video-player, .journey-unblur-content
 ||customerly.io^$third-party
 ! ||chat.customerly.io^$third-party
 ! ||messenger.customerly.io^$third-party
-||eesysoft.com^$3p
+||eesysoft.com^$third-party
 ||forum.kirupa.com/embed/comments$subdocument
 ||livechatinc.com^$third-party
 ||pcsupport.lenovo.com/esv*/plugins/contactus/livefloatchat
