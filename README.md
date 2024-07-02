@@ -2,7 +2,7 @@
 This is a fork of [yokoffing's filterlists repository](https://github.com/yokoffing/filterlists) which aims to format a number their filters in a way that supports the latest builds of Adblock Plus.
 
 ## Disclaimer
-By using this filters, you agree that they are experimental, and that Metrokoto is not responsible for any breakage.
+By using these filters, you agree that they are experimental, and that Metrokoto is not responsible for any breakage.
 
 Due to the rather archaic filter syntax Adblock Plus has, converting uBlock Origin filters is not a simple process.
 
