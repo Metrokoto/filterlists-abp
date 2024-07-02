@@ -1,4 +1,4 @@
-[Adblock Plus 2.0]
+[Adblock Plus 3.6]
 ! Title: 🔒 Privacy Essentials for ABP
 ! Description: A curated list for advanced hardening. Minimize connections to third-party sites.
 ! Homepage: https://github.com/Metrokoto/filterlists
