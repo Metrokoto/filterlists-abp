@@ -719,7 +719,7 @@ kellegram.xyz##.socials
 ! ||assets.hearstapps.com^
 delish.com##.video-player, .journey-unblur-content
 ! Brightcove
-||brightcove.net^$3p
+||brightcove.net^$third-party
 @@||brightcove.^
 @@||media.brightcove.com^$image
 @@||media.brightcove.com^$media,domain=players.brightcove.net
