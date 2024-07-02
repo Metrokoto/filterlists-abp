@@ -138,7 +138,7 @@
 ||getsentry.com^$third-party
 ||getsitecontrol.com^$third-party
 ||gleamjs.io^
-||gravatar.com^$important
+||gravatar.com^
 ||gravity-software.com^$third-party
 ||groupbycloud.com^$third-party
 ||guim.co.uk^$3p,script
@@ -572,7 +572,6 @@ bing.com##:matches-path(~/shop) a[href*="/aclick?"]:not(.vsp_ads)
 ||eventcom.api.np.km.playstation.net/event^
 ||g.doubleclick.net/tag/js/gpt.js$important,domain=accuweather.com
 ||networkworld.com/www/js/ads/
-@@||clients*.google.com/adsense/*?key=$domain=~calcalist.co.il|~gaytube.com|~mako.co.il|~pornhub.com|~pornhubthbh7ap3u.onion|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~walla.co.il|~xtube.com|~ynet.co.il|~youjizz.com|~youporn.com|~youporngay.com,badfilter
 
 ! EP
 ||omtrdc.net/rest/
