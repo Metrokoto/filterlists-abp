@@ -720,12 +720,12 @@ kellegram.xyz##.socials
 delish.com##.video-player, .journey-unblur-content
 ! Brightcove
 ||brightcove.net^$3p
-@@||brightcove.^$xhr
+@@||brightcove.^
 @@||media.brightcove.com^$image
 @@||media.brightcove.com^$media,domain=players.brightcove.net
 @@||players.brightcove.net^$script
 ! JW Player
-||entitlements.jwplayer.com^$important
+||entitlements.jwplayer.com^
 ||jwpsrv.com^$third-party
 !||jwplayer.com^$third-party,domain=~menshealth.com
 @@||cdn.jwplayer.com^
@@ -812,7 +812,7 @@ delish.com##.video-player, .journey-unblur-content
 ! Block requests to unused images
 ||bgr.com^$domain=dirt.com
 ||goldderby.com^$domain=dirt.com
-||rollingstone.com^$important,domain=dirt.com
+||rollingstone.com^$domain=dirt.com
 ||spy.com^$domain=dirt.com
 ||tvline.com^$domain=dirt.com
 
@@ -994,14 +994,9 @@ x.com,twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion
 x.com,twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##[aria-label="relevant people" i]:upward(1)
 ! Login popup
 !twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div#layers div[data-testid="sheetDialog"]:upward(div[role="group"][tabindex="0"])
-!twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##html:style(overflow: auto !important;)
 ! from https://github.com/DandelionSprout/adfilt/blob/master/TwitterPureReadingExperience.txt
 ! Removes login nags
 x.com,twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion#?##layers > div[class*=" "]:first-of-type:has(a[href="/i/flow/signup"])
-!#if !adguard
-! https://mobile.twitter.com/nasuno_Posi
-x.com,twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[data-testid=sidebarColumn] section[aria-label][role=region]
-!#endif
 ! Promoted (Nov 2022)
 ! https://www.reddit.com/r/uBlockOrigin/comments/z73yk9/twitter_promoted_tweets_showing_up/
 x.com,twitter.com##[data-testid="tweet"]:has-text(/Promoted$/)
@@ -1012,19 +1007,6 @@ twitter.com,x.com#?#div[data-testid=primaryColumn] div:has(> div > div > a[href=
 !! Removes a login prompt when visiting "/intent/follow"-type links in mobile environments
 ! https://twitter.com/intent/follow?screen_name=mesitsu (13/04/2020)
 x.com,mobile.twitter.com,mobile.twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion#?#a[href="/i/flow/signup"][dir=auto][role=link][data-focusable=true]:upward(7)
-!#if env_mobile
-twitter.com,x.com#?#a[href="/i/flow/signup"][dir=auto][role=link][data-focusable=true]:upward(7)
-!#endif
-!#if false
-! Removes the bottom login sticky banner about logging in, in the April 2020-ish redesign
-twitter.com,x.com#?##layers > div[class*=" "]:first-of-type:has(a[href="/i/flow/signup"])
-! https://twitter.com/hideo_kojima_en/status/319595772981166080
-twitter.com,x.com###layers > div[class] > div[class] > div[class] > div[class]:has(> div[class] > div[class] > div[class] > div[class] > div[class] > a[href="/login"])
-!#endif
-!#if !env_mobile
-! Fullpage uncloseable overlay on some pages
-twitter.com,x.com#?#div[role=group]:has(div[data-testid*=apple_sign_in]:only-of-type)
-!#endif
 ! Removes the "Aren't you on Twitter??" prompt in the upper right of user timelines
 ! https://twitter.com/nasuno_Posi
 twitter.com,x.com##.js-signup-call-out
@@ -1032,11 +1014,6 @@ twitter.com,x.com##.js-signup-call-out
 !! Aims to remove the login overlay prompt when browsing down an account's timeline
 mobile.twitter.com,x.com##.rn-13w96dm
 mobile.twitter.com,x.com##.rn-1kihuf0.rn-1awozwy
-!#if !adguard
-! https://mobile.twitter.com/nasuno_Posi
-!! Removes the "Are you new on Twitter?" banner in the upper right of user timelines (Screen area has to be ≥~1400px wide)
-mobile.twitter.com,x.com##div[data-testid=sidebarColumn] section[aria-label][role=region]
-!#endif
 
 ! BING
 ! Hide rebate
@@ -1159,7 +1136,7 @@ unsplash.com##img[src^="https://plus.unsplash.com/"]:upward(figure)
 mangapill.com##.mb-3.container > .justify-between.items-center.flex, div.container > .justify-between.items-center.flex
 
 ! from https://github.com/Yuki2718/adblock2/blob/main/japanese/jpfp-ub.txt
-/^https:\/\/[a-z]{10,14}\.cam\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xhr,third-party
+/^https:\/\/[a-z]{10,14}\.cam\/[%\*=\?_0-9a-zA-Z]{1000,}$/$third-party
 /^https:\/\/[a-z]{10,14}\.casa\/tsk\/[\*_0-9a-zA-Z]{600,}$/$image,third-party
 /^https:\/\/[a-z]{10,14}\.casa\/[%\*=\?_0-9a-zA-Z]{1000,}$/$third-party
 /^https:\/\/[a-z]{10,14}\.com\/(?=[%=\?_0-9a-zA-Z]*\*)(?=[%\*=\?_a-zA-Z]*\d)(?=[%\*=\?_0-9a-z]*[A-Z])[%\*=\?_0-9a-zA-Z]{1000,}$/$third-party,domain=~edu|~gov|~jp
