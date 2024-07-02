@@ -141,11 +141,11 @@
 ||gravatar.com^
 ||gravity-software.com^$third-party
 ||groupbycloud.com^$third-party
-||guim.co.uk^$3p,script
+||guim.co.uk^$third-party,script
 ||hawk-assets.co.uk^
 ||hawk-tech.co.uk^
 ||hawksearch.com^$third-party
-||hextom.com^$3p
+||hextom.com^$third-party
 ||hollywoodreporter.com/fe_data/$domain=hollywoodreporter.com
 ||hotjar-analytics.com^
 ||hubspot.com^$third-party
