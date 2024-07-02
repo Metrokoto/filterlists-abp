@@ -1,7 +1,7 @@
 [Adblock Plus 3.6]
 ! Title: ✋ Antipaywall filters (without element hiding) for ABP
 ! Description: Curated list of antipaywall requests
-! Updated: 10 October 2023
+! Updated: 2 July 2024
 ! License: https://creativecommons.org/licenses/by/3.0
 ! Homepage: https://github.com/Metrokoto/filterlists
 ! Expires: 7 days (update frequency)
