@@ -1,27 +1,27 @@
-[Adblock Plus 2.0]
-! Title: ❌ Adult Annoyances List
+[Adblock Plus 3.6]
+! Title: ❌ Adult Annoyances List for ABP
 ! Description: Block annoyances on adult sites
 ! Updated: 3 May 2024
 ! License: https://creativecommons.org/licenses/by/3.0/
-! Homepage: https://github.com/yokoffing/filterlists
+! Homepage: https://github.com/Metrokoto/filterlists
 ! Expires: 4 days (update frequency)
 
 ! Network Requests
-||yeswegays.com^$badfilter
+||yeswegays.com^
 @@/contents/images-banners/*$domain=yeswegays.com
-||bonertraffic.mobi^$3p
+||bonertraffic.mobi^$third-party
 ||cc.boyfriendtv.com/bftv/*.jpg$image
 ||cc.boyfriendtv.com/bftv/b/img/*.jpg$image
-||cc.boyfriendtv.com/bftv/www/js/RTABlur-js.min.js$script,domain=www.boyfriendtv.com,important
+||cc.boyfriendtv.com/bftv/www/js/RTABlur-js.min.js$script,domain=www.boyfriendtv.com
 ||cc.boyfriendtv.com/bftv/paysite$image
 ||ejaculationnation.com^
 ||go.xhamster.com^
-||masturbaseinvegas.com^$3p
-||porntop.com^$3p
-||vxxx.com^$3p
-||chaturbate.com^$3p
+||masturbaseinvegas.com^$third-party
+||porntop.com^$third-party
+||vxxx.com^$third-party
+||chaturbate.com^$third-party
 ||ggg.xhamster.com^
-||howcantheydidit.xyz^$3p
+||howcantheydidit.xyz^$third-party
 ||yoxepo.uno^
 ||faxifa.xyz^
 ||nutaku.com^
@@ -174,7 +174,3 @@ sniffies.com##.ng-tns-c192-10.overset > .ng-tns-c192-10
 sniffies.com##.map-main-content > .ng-star-inserted.ng-tns-c192-12
 ||site.sniffiesassets.com/upgrade-ads^
 ||media.twiliocdn.com^$3p
-
-! URL Tracking
-! https://mrgay.com/video/10166063/arabian-strokes/?autostart=1
-! $removeparam=autostart,domain=mrgay.com
