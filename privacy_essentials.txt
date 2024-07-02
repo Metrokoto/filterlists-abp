@@ -570,7 +570,7 @@ bing.com##:matches-path(~/shop) a[href*="/aclick?"]:not(.vsp_ads)
 ||accuweather.com/bundles/prebid.
 ! May cause sign-in trouble for US IP
 ||eventcom.api.np.km.playstation.net/event^
-||g.doubleclick.net/tag/js/gpt.js$important,domain=accuweather.com
+||g.doubleclick.net/tag/js/gpt.js$domain=accuweather.com
 ||networkworld.com/www/js/ads/
 
 ! EP
