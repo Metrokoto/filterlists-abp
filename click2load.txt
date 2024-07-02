@@ -1,74 +1,68 @@
-[Adblock Plus]
-! Title: ⛔ yokoffing's click2load filters
-! Description: To be used in uBlock Origin
-! Homepage: https://github.com/yokoffing/filterlists
+[Adblock Plus 3.6]
+! Title: ⛔ yokoffing's click2load filters for ABP
+! Description: To be used in ABP (WARNING: click2load functionality will not work in ABP)
+! Homepage: https://github.com/Metrokoto/filterlists
 ! Expires: 7 days (update frequency)
-! Version: 5 June 2024
+! Version: 2 July 2024
 ! Syntax: AdBlock
 
-!#if ext_ublock
-||airtable.com/embed*$3p,frame,redirect=click2load.html
-||art19.com/shows/$3p,frame,redirect=click2load.html
-||bandcamp.com/EmbeddedPlayer/$3p,frame,redirect=click2load.html
-!||codepen.io/$3p,frame,redirect=click2load.html
-||cdpn.io/$3p,frame,redirect=click2load.html
-||checkout.shopify.com/$3p,frame,redirect=click2load.html
-||codepen.io/hubspot/embed/$3p,frame,redirect=click2load.html,domain=~theodinproject.com
-||dexscreener.com/$3p,frame,redirect=click2load.html
-||discuss.privacyguides.net/embed/$3p,frame,redirect=click2load.html
-||docs.google.com/$3p,frame,redirect=click2load.html
-||docs.google.com/document/d/e/$3p,frame,redirect=click2load.html
-||docs.google.com/forms/$3p,frame,redirect=click2load.html
-||docs.google.com/presentation/d/e/$3p,frame,redirect=click2load.html
-||docs.google.com/spreadsheets/$3p,frame,redirect=click2load.html
-||docs.google.com/viewer*$3p,frame,redirect=click2load.html
-||drive.google.com/file/$3p,frame,redirect=click2load.html
-||embed.acast.com/$3p,frame,redirect=click2load.html
-||embed.documentcloud.org/$3p,frame,redirect=click2load.html
-||embed.music.apple.com/$3p,frame,redirect=click2load.html
-||embed.podcasts.apple.com/$3p,frame,redirect=click2load.html
-||embed.ted.com/$3p,frame,redirect=click2load.html
-||glitch.com/embed/$3p,frame,redirect=click2load.html
-||google.com/maps/embed$3p,frame,redirect=click2load.html
-||html5-player.libsyn.com/embed/$3p,frame,redirect=click2load.html
-||iframe.videodelivery.net/$3p,frame,redirect=click2load.html
-||loom.com/embed/$3p,frame,redirect=click2load.html
-||open.spotify.com/embed-podcast/$3p,frame,redirect=click2load.html
-||open.spotify.com/embed/$3p,frame,redirect=click2load.html
-||player.blubrry.com/$3p,frame,redirect=click2load.html
-||player.captivate.fm^$3p,frame,redirect=click2load.html
-||player.hotmart.com/$3p,frame,redirect=click2load.html
-||player.megaphone.fm/$3p,frame,redirect=click2load.html
-||player.simplecast.com^$3p,frame,redirect=click2load.html
-||player.twitch.tv/$3p,frame,redirect=click2load.html
-||player.vimeo.com/video^$3p,frame,redirect=click2load.html,domain=~bing.com|~google.com|~duckduckgo.com|~openai.com|~video.search.yahoo.com|~window-swap.com
-||playlist.megaphone.fm/$3p,frame,redirect=click2load.html
-||podbean.com/player-v2/$3p,frame,redirect=click2load.html
-||quizlet.com/$3p,frame,redirect=click2load.html
-||reddit.com/mediaembed/$3p,frame,redirect=click2load.html
-||s3.amazonaws.com/embed.animoto.com/$3p,frame,redirect=click2load.html
-!#if env_chromium
-! https://github.com/uBlockOrigin/uBlock-issues/issues/3088
-||safe.txmblr.com^$3p,frame,redirect=click2load.html
-!#endif
-||scribd.com/embeds/$3p,frame,redirect=click2load.html
-||stay22.com/embed/$3p,frame,redirect=click2load.html
-||static.vidgyor.com/player/$3p,frame,redirect=click2load.html
-||traderjoexyz.com/$3p,frame,redirect=click2load.html
-||trinitymedia.ai/player/trinity-player.php*$3p,frame,redirect=click2load.html
-||twitch.tv^$3p,frame,redirect=click2load.html
-||vimeo.com/event/$3p,frame,redirect=click2load.html,domain=~bing.com|~google.com|~duckduckgo.com|~video.search.yahoo.com
-||view.genial.ly$3p,frame,redirect=click2load.html
-||volume.vox-cdn.com/embed/$3p,frame,redirect=click2load.html
-||w.soundcloud.com/player/$3p,frame,redirect=click2load.html
-!||youtube-nocookie.com^$3p,frame,redirect=click2load.html,domain=~bing.com|~google.com|~duckduckgo.com|~video.search.yahoo.com
-||youtube-nocookie.com/embed^$3p,frame,redirect=click2load.html,domain=~bing.com|~google.com|~duckduckgo.com|~video.search.yahoo.com
-||youtube.com^$3p,frame,redirect=click2load.html,domain=~bing.com|~chatreplay.stream|~google.com|~duckduckgo.com|~video.search.yahoo.com
-!#endif
+||airtable.com/embed*$subdocument,rewrite=abp-resource:blank-html,domain=~airtable.com
+||art19.com/shows/$subdocument,rewrite=abp-resource:blank-html,domain=~art19.com
+||bandcamp.com/EmbeddedPlayer/$subdocument,rewrite=abp-resource:blank-html,domain=~bandcamp.com
+!||codepen.io/$subdocument,rewrite=abp-resource:blank-html,domain=~codepen.io
+||cdpn.io/$subdocument,rewrite=abp-resource:blank-html,domain=~cdpn.io
+||checkout.shopify.com/$subdocument,rewrite=abp-resource:blank-html,domain=~shopify.com
+||codepen.io/hubspot/embed/$subdocument,rewrite=abp-resource:blank-html,domain=~codepen.io|~theodinproject.com
+||dexscreener.com/$subdocument,rewrite=abp-resource:blank-html,domain=~dexscreener.com
+||discuss.privacyguides.net/embed/$subdocument,rewrite=abp-resource:blank-html,domain=~privacyguides.net
+||docs.google.com/$subdocument,rewrite=abp-resource:blank-html,domain=~google.com
+||docs.google.com/document/d/e/$subdocument,rewrite=abp-resource:blank-html,domain=~google.com
+||docs.google.com/forms/$subdocument,rewrite=abp-resource:blank-html,domain=~google.com
+||docs.google.com/presentation/d/e/$subdocument,rewrite=abp-resource:blank-html,domain=~google.com
+||docs.google.com/spreadsheets/$subdocument,rewrite=abp-resource:blank-html,domain=~google.com
+||docs.google.com/viewer*$subdocument,rewrite=abp-resource:blank-html,domain=~google.com
+||drive.google.com/file/$subdocument,rewrite=abp-resource:blank-html,domain=~google.com
+||embed.acast.com/$subdocument,rewrite=abp-resource:blank-html,domain=~acast.com
+||embed.documentcloud.org/$subdocument,rewrite=abp-resource:blank-html,domain=~documentcloud.org
+||embed.music.apple.com/$subdocument,rewrite=abp-resource:blank-html,domain=~apple.com
+||embed.podcasts.apple.com$subdocument,rewrite=abp-resource:blank-html,domain=~apple.com
+||embed.ted.com/$subdocument,rewrite=abp-resource:blank-html,domain=~ted.com
+||glitch.com/embed/$subdocument,rewrite=abp-resource:blank-html,domain=~glitch.com
+||google.com/maps/embed$subdocument,rewrite=abp-resource:blank-html,domain=~google.com
+||html5-player.libsyn.com/embed/$subdocument,rewrite=abp-resource:blank-html,domain=~libsyn.com
+||iframe.videodelivery.net/$subdocument,rewrite=abp-resource:blank-html,domain=~videodelivery.net
+||loom.com/embed/$subdocument,rewrite=abp-resource:blank-html,domain=~loom.com
+||open.spotify.com/embed-podcast/$subdocument,rewrite=abp-resource:blank-html,domain=~spotify.com
+||open.spotify.com/embed/$subdocument,rewrite=abp-resource:blank-html,domain=~spotify.com
+||player.blubrry.com/$subdocument,rewrite=abp-resource:blank-html,domain=~blubrry.com
+||player.captivate.fm^$subdocument,rewrite=abp-resource:blank-html,domain=~captivate.fm
+||player.hotmart.com/$subdocument,rewrite=abp-resource:blank-html,domain=~hotmart.com
+||player.megaphone.fm/$subdocument,rewrite=abp-resource:blank-html,domain=~megaphone.fm
+||player.simplecast.com^$subdocument,rewrite=abp-resource:blank-html,domain=~simplecast.com
+||player.twitch.tv/$subdocument,rewrite=abp-resource:blank-html,domain=~twitch.tv
+||player.vimeo.com/video^$subdocument,rewrite=abp-resource:blank-html,domain=~vimeo.com|~bing.com|~google.com|~duckduckgo.com|~openai.com|~video.search.yahoo.com|~window-swap.com
+||playlist.megaphone.fm/$subdocument,rewrite=abp-resource:blank-html,domain=~megaphone.fm
+||podbean.com/player-v2/$subdocument,rewrite=abp-resource:blank-html,domain=~podbean.com
+||quizlet.com/$subdocument,rewrite=abp-resource:blank-html,domain=~quizlet.com
+||reddit.com/mediaembed/$subdocument,rewrite=abp-resource:blank-html,domain=~reddit.com
+||s3.amazonaws.com/embed.animoto.com/$subdocument,rewrite=abp-resource:blank-html,domain=~amazonaws.com
+||scribd.com/embeds/$subdocument,rewrite=abp-resource:blank-html,domain=~scribd.com
+||stay22.com/embed/$subdocument,rewrite=abp-resource:blank-html,domain=~stay22.com
+||static.vidgyor.com/player/$subdocument,rewrite=abp-resource:blank-html,domain=~vidgyor.com
+||traderjoexyz.com/$subdocument,rewrite=abp-resource:blank-html,domain=~traderjoexyz.com
+||trinitymedia.ai/player/trinity-player.php*$subdocument,rewrite=abp-resource:blank-html,domain=~trinitymedia.ai
+||twitch.tv^$subdocument,rewrite=abp-resource:blank-html,domain=~twitch.tv
+||vimeo.com/event/$subdocument,rewrite=abp-resource:blank-html,domain=~vimeo.com|~bing.com|~google.com|~duckduckgo.com|~video.search.yahoo.com
+||view.genial.ly$subdocument,rewrite=abp-resource:blank-html,domain=~genial.ly
+||volume.vox-cdn.com/embed/$subdocument,rewrite=abp-resource:blank-html,domain=~vox-cdn.com
+||w.soundcloud.com/player/$subdocument,rewrite=abp-resource:blank-html,domain=~soundcloud.com
+!||youtube-nocookie.com^$subdocument,rewrite=abp-resource:blank-html,domain=~youtube-nocookie.com|~bing.com|~google.com|~duckduckgo.com|~video.search.yahoo.com
+||youtube-nocookie.com/embed^$subdocument,rewrite=abp-resource:blank-html,domain=youtube-nocookie.com|~bing.com|~google.com|~duckduckgo.com|~video.search.yahoo.com
+||youtube.com^$subdocument,rewrite=abp-resource:blank-html,domain=~youtube.com|~bing.com|~chatreplay.stream|~google.com|~duckduckgo.com|~video.search.yahoo.com
 
 !!! DO NOT BLOCK
 ! Tiktok embeds, GIFs
-!||cdn.embedly.com/widgets/$3p,frame,redirect=click2load.html
-!||cdn.embedly.com/widgets/media.html*$3p,frame,redirect=click2load.html
+!||cdn.embedly.com/widgets/$subdocument,rewrite=abp-resource:blank-html,domain=~embedly.com
+!||cdn.embedly.com/widgets/media.html*$subdocument,rewrite=abp-resource:blank-html,domain=~embedly.com
 ! GIFs
-!||gfycat.com/$3p,frame,redirect=click2load.html
+!||gfycat.com/$subdocument,rewrite=abp-resource:blank-html,domain=~gfycat.com
