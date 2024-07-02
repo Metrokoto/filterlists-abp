@@ -1,7 +1,7 @@
-[Adblock Plus 2.0]
-! Title: 🛠️ yokoffing's Annoyance List
+[Adblock Plus 3.6]
+! Title: 🛠️ yokoffing's Annoyance List for ABP
 ! Description: Hide annoyances and extraneous page elements ("related articles", "read more", etc.) not covered by other lists
-! Homepage: https://github.com/yokoffing/filterlists
+! Homepage: https://github.com/Metrokoto/filterlists
 ! Expires: 4 days (update frequency)
 ! Version: 23 June 2024
 ! Syntax: AdBlock
@@ -654,9 +654,9 @@ zoosk.com##.article__related, .newsletter
 
 ! General
 -push-notifications/$script
-||cdn.carrotquest.app^$3p
-||cdn.pn.vg^$3p
-||hlsmedia.gannett-cdn.com^$3p
+||cdn.carrotquest.app^$third-party
+||cdn.pn.vg^$third-party
+||hlsmedia.gannett-cdn.com^$third-party
 ||interactive.guim.co.uk
 ##[class*="sponsorlink"]
 ||gizmodo.com/embed/comments$subdocument
@@ -697,10 +697,10 @@ kellegram.xyz##.socials
 ||readaloud.googleapis.com^$script
 ! Block players that usually play content not directly related to the page
 ||redvideo.io^$domain=~redvideo.io
-!||cnevids.com^$3p,domain=~gq.com
-||kaltura.com^$3p,domain=~financialaidtv.com
+!||cnevids.com^$third-party,domain=~gq.com
+||kaltura.com^$third-party,domain=~financialaidtv.com
 ! https://github.com/yokoffing/filterlists/issues/117
-@@||cdnapi-legacy.kaltura.com^$xhr,domain=yle.fi
+@@||cdnapi-legacy.kaltura.com^$domain=yle.fi
 ! https://www.appdate.lk/technology/2023-browser-showdown/
 ||beyondwords.io^
 ||code.responsivevoice.org^
@@ -726,99 +726,99 @@ delish.com##.video-player, .journey-unblur-content
 @@||players.brightcove.net^$script
 ! JW Player
 ||entitlements.jwplayer.com^$important
-||jwpsrv.com^$3p
-!||jwplayer.com^$3p,domain=~menshealth.com
-@@||cdn.jwplayer.com^$xhr
-@@||content.jwplatform.com^$xhr,script
+||jwpsrv.com^$third-party
+!||jwplayer.com^$third-party,domain=~menshealth.com
+@@||cdn.jwplayer.com^
+@@||content.jwplatform.com^$script
 @@||jwpcdn.com/player/plugins/vast/$script
 @@||jwpcdn.com^$font
 !!! @@||jwpltx.com^$image
 @@||jwpsrv.com^$subdocument
 ! https://www.news24.com
 ! paywalled audio player
-||oovvuu.io^$3p
-||oovvuu.media^$3p
+||oovvuu.io^$third-party
+||oovvuu.media^$third-party
 
 ! https://github.com/brave/adblock-lists/blob/master/brave-lists/brave-ios-specific.txt
 ! Invideo ads
 ||api.fw.tv^
-||avantisvideo.com/avm/js/video-loader.js$script,3p
+||avantisvideo.com/avm/js/video-loader.js$script,third-party
 ||c.jsrdn.com^$script,domain=muscleandfitness.com
-||channelexco.com/player/$3p
-||connatix.com^$script,3p
+||channelexco.com/player/$third-party
+||connatix.com^$script,third-party
 ||delivery.vidible.tv/jsonp/
 ||dywolfer.de^
-||embed.sendtonews.com^$3p
-||fqtag.com^$3p
+||embed.sendtonews.com^$third-party
+||fqtag.com^$third-party
 ||fwcdn1.com/js/fwn.js
 ||fwcdn1.com/js/storyblock.js
-||fwcdn2.com^$3p
+||fwcdn2.com^$third-party
 ||go.trvdp.com^
 ||jwpcdn.com^$script,domain=bgr.com|dexerto.com|zimbio.com
 ||jwplayer.com/players/$script,domain=ginx.tv
-||live.primis.tech^$3p
-||play.anyclip.com^$script,3p
+||live.primis.tech^$third-party
+||play.anyclip.com^$script,third-party
 ||play.springboardplatform.com^
-||playbuzz.com/embed/$script,3p
-||playbuzz.com/player/$script,3p
-||player.anyclip.com/anyclip-widget/$script,3p
-||player.avplayer.com^$3p
-||player.ex.co^$script,3p
-||player.sendtonews.com^$3p
+||playbuzz.com/embed/$script,third-party
+||playbuzz.com/player/$script,third-party
+||player.anyclip.com/anyclip-widget/$script,third-party
+||player.avplayer.com^$third-party
+||player.ex.co^$script,third-party
+||player.sendtonews.com^$third-party
 ||players.brightcove.net^$script,domain=businessinsider.com.au|gizmodo.com.au|kotaku.com.au|lifehacker.com.au|pedestrian.tv
-||playwire.com/bolt/js/$script,3p
+||playwire.com/bolt/js/$script,third-party
 ||rumble.com^$domain=tiphero.com
 ||services.brid.tv^$script,domain=spin.com
 ||sportrecs.com/redirect/embed/
-||ultimedia.com/js/common/smart.js$script,3p
-||vidazoo.com/basev/$script,3p
+||ultimedia.com/js/common/smart.js$script,third-party
+||vidazoo.com/basev/$script,third-party
 ||video-api.yql.yahoo.com^*/wf-channel=related-videos?
-||vidora.com^$3p
-||viewdeos.com^$script,3p
-||vms-players.minutemediaservices.com^$script,3p
+||vidora.com^$third-party
+||viewdeos.com^$script,third-party
+||vms-players.minutemediaservices.com^$script,third-party
 ||voqally.com/hub/app/
 ||vplayer.newseveryday.com^
 ||widgets.outbrain.com^$domain=cnn.com
 
 ! Comments not covered by other annoyances lists
-||championat.com^$3p
-||yotpo.com^$3p
+||championat.com^$third-party
+||yotpo.com^$third-party
 @@||staticw2.yotpo.com/assets/yotpo-widget-font
 ||lifehacker.com/embed/comments^$subdocument
 ||jetpack.wordpress.com/jetpack-comment/$subdocument
-||cdn.commento.io^$3p
+||cdn.commento.io^$third-party
 ! ||comment.youmaker.com^
-||youmaker.com^$3p
-||giscus.app^$3p
+||youmaker.com^$third-party
+||giscus.app^$third-party
 
 ! Annoying anti-adblock
 ||images.cointelegraph.com/images/*_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy9hNGFkNDk1ZmMwNGJkOTdmNzE2NDlhNDhkNjAwM2QwMC5wbmc=.png$image
 
 ! Chat modules
-||apexchat.net^$3p
-||crisp.chat^$3p
-||customerly.io^$3p
-! ||chat.customerly.io^$3p
-! ||messenger.customerly.io^$3p
+||apexchat.net^$third-party
+||crisp.chat^$third-party
+||customerly.io^$third-party
+! ||chat.customerly.io^$third-party
+! ||messenger.customerly.io^$third-party
 ||eesysoft.com^$3p
 ||forum.kirupa.com/embed/comments$subdocument
-||livechatinc.com^$3p
+||livechatinc.com^$third-party
 ||pcsupport.lenovo.com/esv*/plugins/contactus/livefloatchat
-||pico.tools^$3p
+||pico.tools^$third-party
 ||salesforceliveagent.com
-||widget.intercom.io^$3p
-||yappaapp.com^$3p
+||widget.intercom.io^$third-party
+||yappaapp.com^$third-party
 
 ! Block requests to unused images
-||bgr.com^$all,domain=dirt.com
-||goldderby.com^$all,domain=dirt.com
-||rollingstone.com^$all,important,domain=dirt.com
-||spy.com^$all,domain=dirt.com
-||tvline.com^$all,domain=dirt.com
+||bgr.com^$domain=dirt.com
+||goldderby.com^$domain=dirt.com
+||rollingstone.com^$important,domain=dirt.com
+||spy.com^$domain=dirt.com
+||tvline.com^$domain=dirt.com
 
 ! from https://github.com/DandelionSprout/adfilt/blob/master/AnnoyancesList
 ! AAB prompts
-/^https://[a-z]{8,25}\.com/v2[a-zA-Z0-9_-]{70,}$/$xmlhttprequest,ping,3p,important
+/^https://[a-z]{8,25}\.com/v2[a-zA-Z0-9_-]{70,}$/$ping,third-party
 
 ! from https://github.com/uBlock-user/uBO-Personal-Filters/blob/master/uPF.txt
 ! Be sure to add scriplets https://github.com/uBlock-user/uBO-Personal-Filters#requirements
@@ -949,10 +949,6 @@ www.facebook.com##[aria-posinset] [aria-label="See more"][href="/reel/?s=ifu_see
 facebook.com##[aria-label*="Marketplace"] object > a[href^="/ads/"] > span:not(:empty):upward(11)
 
 ! GOOGLE
-! Google consent dialog, "before you continue"
-www.google.*##^script:has-text(consentCookiePayload)
-www.google.*##+js(acis, document.cookie, YES+)
-google.*##+js(aeld, DOMContentLoaded, CONSENT)
 ! block subdomain request can generate breakage - disable network filter if you have any breakage
 ||consent.google.com^
 ! Google "People also searched for"
@@ -961,33 +957,17 @@ google.*##[id^="eob_"]
 ! https://www.troddit.com/r/brave_browser/comments/uzzmp7/is_it_possible_block_the_sign_in_with_google/iaeqazb/
 ! https://www.bleepingcomputer.com/news/security/duckduckgo-now-blocks-google-sign-in-pop-ups-on-all-sites/
 ! https://github.com/yokoffing/filterlists/issues/75
-!||accounts.google.com/gsi/client$script,3p
-||accounts.google.com/gsi/$xhr,script,3p,domain=~auth.23andme.com
+!||accounts.google.com/gsi/client$script,third-party
+||accounts.google.com/gsi/$third-party,domain=~auth.23andme.com
 
 ! REDDIT
 ! Hide Reddit 'Top Broadcast Now' & 'Top livestream'
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##a[href^="/rpan/"] > h3:has-text(/Top (livestream|broadcast)/):upward(7)
 ! Block downloading
-!||redd.it/*.m3u8^$xhr,domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
-||strapi.reddit.com^$xhr,domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
+!||redd.it/*.m3u8^$domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
+||strapi.reddit.com^$domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
 ! https://github.com/yokoffing/filterlists/issues/38
-@@||v.redd.it^$xhr,domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
-
-! YOUTUBE
-! YT consent
-youtube.com##+js(set, ytInitialData.topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer.forceConsent, false)
-youtube.com##+js(json-prune, [].response.topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer)
-youtube.com##+js(json-prune, topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer)
-! YT login
-youtube.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.upsellDialogRenderer.isVisible, false)
-youtube.com##+js(set, ytInitialData.overlay.upsellDialogRenderer.isVisible, false)
-youtube.com##+js(json-prune, [].playerResponse.auxiliaryUi.messageRenderers.upsellDialogRenderer)
-
-! YouTube delay on Firefox
-! https://www.ghacks.net/2023/11/20/youtube-video-loading-delayed-fix-inside/
-!#if env_firefox
-www.youtube.com##+js(nano-stb, resolve(1), 5000, 0.001)
-!#endif
+@@||v.redd.it^$domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
 
 ! TWITTER
 ! [Nov 2023] from https://www.reddit.com/r/uBlockOrigin/wiki/solutions/#wiki_twitter
@@ -1179,21 +1159,21 @@ unsplash.com##img[src^="https://plus.unsplash.com/"]:upward(figure)
 mangapill.com##.mb-3.container > .justify-between.items-center.flex, div.container > .justify-between.items-center.flex
 
 ! from https://github.com/Yuki2718/adblock2/blob/main/japanese/jpfp-ub.txt
-/^https:\/\/[a-z]{10,14}\.cam\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xhr,3p
-/^https:\/\/[a-z]{10,14}\.casa\/tsk\/[\*_0-9a-zA-Z]{600,}$/$image,3p
-/^https:\/\/[a-z]{10,14}\.casa\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xhr,3p
-/^https:\/\/[a-z]{10,14}\.com\/(?=[%=\?_0-9a-zA-Z]*\*)(?=[%\*=\?_a-zA-Z]*\d)(?=[%\*=\?_0-9a-z]*[A-Z])[%\*=\?_0-9a-zA-Z]{1000,}$/$xhr,3p,domain=~edu|~gov|~jp
-/^https:\/\/[a-z]{10,14}\.fun\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xhr,3p
-/^https:\/\/[a-z]{10,14}\.life\/tsk\/[\*_0-9a-zA-Z]{600,}$/$image,3p
-/^https:\/\/[a-z]{10,14}\.life\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xhr,3p
-/^https:\/\/[a-z]{10,14}\.website\/tsk\/[\*_0-9a-zA-Z]{600,}$/$image,3p
-/^https:\/\/[a-z]{8,15}\.com\/alpha\/\d{3,4}$/$xhr,3p
-/^https:\/\/[a-z]{8,15}\.com\/beta\/\d{3,4}$/$xhr,3p
-/^https:\/\/[a-z]{8,15}\.com\/gamma\/\d{3,4}$/$xhr,3p
-/^https:\/\/[a-z]{8,15}\.com\/omega\/\d{3,4}$/$xhr,3p
-/^https?:\/\/[a-z]{5,6}\.com\/script\/bootstrap\.js$/$script,3p,match-case,domain=~edu|~gov|~jp
-/^https?:\/\/[a-z]{5,6}\.com\/script\/jquery\.js$/$script,3p,match-case,domain=~edu|~gov|~jp
-/^https?:\/\/[a-z]{5,6}\.com\/script\/pattern\.js$/$script,3p,match-case,domain=~edu|~gov|~jp
+/^https:\/\/[a-z]{10,14}\.cam\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xhr,third-party
+/^https:\/\/[a-z]{10,14}\.casa\/tsk\/[\*_0-9a-zA-Z]{600,}$/$image,third-party
+/^https:\/\/[a-z]{10,14}\.casa\/[%\*=\?_0-9a-zA-Z]{1000,}$/$third-party
+/^https:\/\/[a-z]{10,14}\.com\/(?=[%=\?_0-9a-zA-Z]*\*)(?=[%\*=\?_a-zA-Z]*\d)(?=[%\*=\?_0-9a-z]*[A-Z])[%\*=\?_0-9a-zA-Z]{1000,}$/$third-party,domain=~edu|~gov|~jp
+/^https:\/\/[a-z]{10,14}\.fun\/[%\*=\?_0-9a-zA-Z]{1000,}$/$third-party
+/^https:\/\/[a-z]{10,14}\.life\/tsk\/[\*_0-9a-zA-Z]{600,}$/$image,third-party
+/^https:\/\/[a-z]{10,14}\.life\/[%\*=\?_0-9a-zA-Z]{1000,}$/$third-party
+/^https:\/\/[a-z]{10,14}\.website\/tsk\/[\*_0-9a-zA-Z]{600,}$/$image,third-party
+/^https:\/\/[a-z]{8,15}\.com\/alpha\/\d{3,4}$/$third-party
+/^https:\/\/[a-z]{8,15}\.com\/beta\/\d{3,4}$/$third-party
+/^https:\/\/[a-z]{8,15}\.com\/gamma\/\d{3,4}$/$third-party
+/^https:\/\/[a-z]{8,15}\.com\/omega\/\d{3,4}$/$third-party
+/^https?:\/\/[a-z]{5,6}\.com\/script\/bootstrap\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
+/^https?:\/\/[a-z]{5,6}\.com\/script\/jquery\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
+/^https?:\/\/[a-z]{5,6}\.com\/script\/pattern\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
 
 ! import Clean Reading Experience list
 9to5mac.com##p strong:has-text(/^Related/):upward(p)
@@ -1246,5 +1226,3 @@ vox.com##.c-article-footer
 wired.com##.callout--has-top-border.gYlOfh.GenericCalloutWrapper-zksK
 zdnet.com##p strong:has-text(/^SEE/):upward(p)
 zdnet.com##p strong:has-text(/^Also/):upward(p)
-
-!#include adult_annoyance_list.txt
