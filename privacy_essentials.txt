@@ -470,7 +470,7 @@
 @@.twitterContainer
 
 ! TIKTOK
-!||tiktok.com^$3p
+!||tiktok.com^$third-party
 ||ibytedtos.com^$third-party,domain=~tiktok.com
 
 ! LINKEDIN
