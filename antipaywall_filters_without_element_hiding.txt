@@ -65,7 +65,7 @@
 ||accuradio.tritondigital.com^
 ||accuradio.com/sweeper/
 ||accuradio.com/static/js/ltjs.js
-||sendtonews.com^$3p
+||sendtonews.com^$third-party
 ||accuradio.com/listener/track-adbreaks/
 ||streamtheworld.com/ondemand/ars?
 ||streamtheworld.com^*/idsync.js
