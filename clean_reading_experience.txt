@@ -1,9 +1,9 @@
-[Adblock Plus 2.0]
-! Title: 📖 Clean Reading Experience
+[Adblock Plus 3.6]
+! Title: 📖 Clean Reading Experience for ABP
 ! Description: Hide RELATED, READ MORE, YOU MAY ALSO LIKE text that distracts from reading articles
-! Updated: 8 March 2023
+! Updated: 2 July 2024
 ! License: https://creativecommons.org/licenses/by/3.0/
-! Homepage: https://github.com/yokoffing/filterlists
+! Homepage: https://github.com/Metrokoto/filterlists
 ! Expires: 7 days (update frequency)
 
 9to5mac.com##p strong:has-text(/^Related/):upward(p)
