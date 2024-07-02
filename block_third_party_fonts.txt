@@ -1,14 +1,14 @@
-[Adblock Plus 2.0]
-! Title: 🔍 Block third party fonts
+[Adblock Plus 3.6]
+! Title: 🔍 Block third party fonts for ABP
 ! Description: Block most third-party fonts. Allows for Material Icons and WOFF fonts in order to not break sites.
-! Homepage: https://github.com/yokoffing/filterlists
+! Homepage: https://github.com/Metrokoto/filterlists
 ! Expires: 4 days (update frequency)
-! Version: 22 May 2024
+! Version: 2 July 2024
 ! Syntax: AdBlock
 
 !!! ALLOWLIST
 @@||ajax.googleapis.com/ajax/libs/webfont/$script,domain=bootsnipp.com|regexpal.com|typepad.com
-@@||amazonaws.com^$font,3p,domain=dollartree.com
+@@||amazonaws.com^$font,third-party,domain=dollartree.com
 @@||googleapis.com/ajax/libs/webfont/$domain=typepad.com
 @@||fast.fonts.net/jsapi/$script
 @@||fonts.googleapis.com$domain=abc.xyz|google.com|blog.google|blogger.com|chromium.org|freetaxusa.com|fmoviesz.to|gaggle.fun|googlesource.com|grow.google|groq.com|myeducator.com|reedsy.com|reliaslearning.com|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
@@ -44,66 +44,52 @@
 
 !!! DENYLIST
 /cdn-cgi/pe/bag2?*googleapis.com*webfont.js
-/csp/fonts^$3p
-||alluremedia.com.au^$font,3p
-||amazonaws.com^$font,3p
-||bootstrapcdn.com/bootstrap/$font,3p
-||cloud.typography.com^$3p
-||cloud.webtype.com^$font,3p
-||disquscdn.com/next/assets/font/$3p
-||edgefonts.net^$3p
-||fast.fonts.com^$3p
-||fast.fonts.net^$3p
-||fontdeck.com^$3p
-||fonts.advance.net^$3p
+/csp/fonts^$third-party
+||alluremedia.com.au^$font,third-party
+||amazonaws.com^$font,third-party
+||bootstrapcdn.com/bootstrap/$font,third-party
+||cloud.typography.com^$third-party
+||cloud.webtype.com^$font,third-party
+||disquscdn.com/next/assets/font/$third-party
+||edgefonts.net^$third-party
+||fast.fonts.com^$third-party
+||fast.fonts.net^$third-party
+||fontdeck.com^$third-party
+||fonts.advance.net^$third-party
 ||fonts.bauernet.me^
-||fonts.cdnfonts.com^$3p
-||fonts.condenast.com^$script,3p
+||fonts.cdnfonts.com^$third-party
+||fonts.condenast.com^$script,third-party
 ||fonts.googleapis.com^ 
 ||fonts.gotraffic.net^$script
-||fonts.gstatic.com^$3p
-||fonts.nymag.com^$script,3p
-||fonts.shopifycdn.com^$3p
-||fonts.smdg.ca^$3p
-||fonts.staticworld.net^$3p
+||fonts.gstatic.com^$third-party
+||fonts.nymag.com^$script,third-party
+||fonts.shopifycdn.com^$third-party
+||fonts.smdg.ca^$third-party
+||fonts.staticworld.net^$third-party
 ||fonts.timeinc.net^
-||fonts.ub-assets.com^$3p
-||fonts.voxmedia.com^$3p
-||gannett-cdn.com^*/fonts/$font,3p
-||gannettdigital.com^*/fonts/$font,3p
+||fonts.ub-assets.com^$third-party
+||fonts.voxmedia.com^$third-party
+||gannett-cdn.com^*/fonts/$font,third-party
+||gannettdigital.com^*/fonts/$font,third-party
 ||gfonts.jifo.co^
-||google.com/swg/$font,3p
-||googleapis.com/ajax/libs/webfont/$3p
-||googleusercontent.com/static/fonts/$3p
+||google.com/swg/$font,third-party
+||googleapis.com/ajax/libs/webfont/$third-party
+||googleusercontent.com/static/fonts/$third-party
 ||gotraffic.net^$font
-||kinja-static.com/assets/fonts/$font,3p
-||myfontastic.com^$3p
-||myfonts.net^$3p
+||kinja-static.com/assets/fonts/$font,third-party
+||myfontastic.com^$third-party
+||myfonts.net^$third-party
 ||netdna-cdn.com^*/webfonts/
-||netdna.bootstrapcdn.com^*/fonts/$3p
+||netdna.bootstrapcdn.com^*/fonts/$third-party
 ||qmerce.com/assets/$font
-||rackcdn.com/fonts/$font,3p
-||typefront.com^$3p
-||typesquare.com^$font,3p
-||use.fonticons.com^$3p
+||rackcdn.com/fonts/$font,third-party
+||typefront.com^$third-party
+||typesquare.com^$font,third-party
+||use.fonticons.com^$third-party
 ||vidible.tv/prod/fonts/$font
-||webfont.fontplus.jp^$3p
-||webfonts.creativecloud.com^$3p
+||webfont.fontplus.jp^$third-party
+||webfonts.creativecloud.com^$third-party
 ||webfonts.sakura.ne.jp^$font
 
-! Privacy Essentials, anti-allowlist:
-@@||gstaticadssl.*.google.com^$font,badfilter
-! @@||use.typekit.net^$font,badfilter
-
-!!! UNUSED
-! Breaks too many sites:
-!||cloudfront.net^$font,3p
-!||fastly.net^$font,3p
-!$font,3p
-!/fonts/*.ttf$font,3p
-!||maxcdn.bootstrapcdn.com/font-awesome/$3p
-!||maxcdn.bootstrapcdn.com^*/fonts/
-!/wp-$font,3p
-!||cdnjs.cloudflare.com/ajax/libs/font-awesome^$3p
-!||fontawesome.com^$3p
-!||wp.com^*/fonts/$3p
+! Privacy Essentials
+||gstaticadssl.*.google.com^$font
