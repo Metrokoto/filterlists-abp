@@ -12,7 +12,7 @@
 ||engage-g2insights.ajc.com^
 ||engage-connext.ajc.com^
 ||arkadiumhosted.com/advertisement/
-||zephr.com^$3p
+||zephr.com^$third-party
 ||mng-digisubs-prod.com^
 ||quora.com/ajax/receive_POST
 ||sophi.io^$third-party
