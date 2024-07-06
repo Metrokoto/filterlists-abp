@@ -3,7 +3,7 @@
 ! Description: Hide annoyances and extraneous page elements ("related articles", "read more", etc.) not covered by other lists
 ! Homepage: https://github.com/Metrokoto/filterlists
 ! Expires: 4 days (update frequency)
-! Version: 2 July 2024
+! Version: 6 July 2024
 ! Syntax: AdBlock
 
 wccftech.com##.related-story, .related-stories.aside
@@ -700,7 +700,7 @@ kellegram.xyz##.socials
 !||cnevids.com^$third-party,domain=~gq.com
 ||kaltura.com^$third-party,domain=~financialaidtv.com
 ! https://github.com/yokoffing/filterlists/issues/117
-@@||cdnapi-legacy.kaltura.com^$domain=yle.fi
+@@||cdnapi-legacy.kaltura.com^$xmlhttprequest,domain=yle.fi
 ! https://www.appdate.lk/technology/2023-browser-showdown/
 ||beyondwords.io^
 ||code.responsivevoice.org^
@@ -720,7 +720,7 @@ kellegram.xyz##.socials
 delish.com##.video-player, .journey-unblur-content
 ! Brightcove
 ||brightcove.net^$third-party
-@@||brightcove.^
+@@||brightcove.^$xmlhttprequest
 @@||media.brightcove.com^$image
 @@||media.brightcove.com^$media,domain=players.brightcove.net
 @@||players.brightcove.net^$script
@@ -728,8 +728,8 @@ delish.com##.video-player, .journey-unblur-content
 ||entitlements.jwplayer.com^
 ||jwpsrv.com^$third-party
 !||jwplayer.com^$third-party,domain=~menshealth.com
-@@||cdn.jwplayer.com^
-@@||content.jwplatform.com^$script
+@@||cdn.jwplayer.com^$xmlhttprequest
+@@||content.jwplatform.com^$xmlhttprequest,script
 @@||jwpcdn.com/player/plugins/vast/$script
 @@||jwpcdn.com^$font
 !!! @@||jwpltx.com^$image
@@ -958,16 +958,16 @@ google.*##[id^="eob_"]
 ! https://www.bleepingcomputer.com/news/security/duckduckgo-now-blocks-google-sign-in-pop-ups-on-all-sites/
 ! https://github.com/yokoffing/filterlists/issues/75
 !||accounts.google.com/gsi/client$script,third-party
-||accounts.google.com/gsi/$third-party,domain=~auth.23andme.com
+||accounts.google.com/gsi/$xmlhttprequest,third-party,domain=~auth.23andme.com
 
 ! REDDIT
 ! Hide Reddit 'Top Broadcast Now' & 'Top livestream'
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##a[href^="/rpan/"] > h3:has-text(/Top (livestream|broadcast)/):upward(7)
 ! Block downloading
 !||redd.it/*.m3u8^$domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
-||strapi.reddit.com^$domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
+||strapi.reddit.com^$xmlhttprequest,domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
 ! https://github.com/yokoffing/filterlists/issues/38
-@@||v.redd.it^$domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
+@@||v.redd.it^$xmlhttprequest,domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
 
 ! TWITTER
 ! [Nov 2023] from https://www.reddit.com/r/uBlockOrigin/wiki/solutions/#wiki_twitter
@@ -1136,18 +1136,18 @@ unsplash.com##img[src^="https://plus.unsplash.com/"]:upward(figure)
 mangapill.com##.mb-3.container > .justify-between.items-center.flex, div.container > .justify-between.items-center.flex
 
 ! from https://github.com/Yuki2718/adblock2/blob/main/japanese/jpfp-ub.txt
-/^https:\/\/[a-z]{10,14}\.cam\/[%\*=\?_0-9a-zA-Z]{1000,}$/$third-party
+/^https:\/\/[a-z]{10,14}\.cam\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{10,14}\.casa\/tsk\/[\*_0-9a-zA-Z]{600,}$/$image,third-party
-/^https:\/\/[a-z]{10,14}\.casa\/[%\*=\?_0-9a-zA-Z]{1000,}$/$third-party
-/^https:\/\/[a-z]{10,14}\.com\/(?=[%=\?_0-9a-zA-Z]*\*)(?=[%\*=\?_a-zA-Z]*\d)(?=[%\*=\?_0-9a-z]*[A-Z])[%\*=\?_0-9a-zA-Z]{1000,}$/$third-party,domain=~edu|~gov|~jp
-/^https:\/\/[a-z]{10,14}\.fun\/[%\*=\?_0-9a-zA-Z]{1000,}$/$third-party
+/^https:\/\/[a-z]{10,14}\.casa\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
+/^https:\/\/[a-z]{10,14}\.com\/(?=[%=\?_0-9a-zA-Z]*\*)(?=[%\*=\?_a-zA-Z]*\d)(?=[%\*=\?_0-9a-z]*[A-Z])[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party,domain=~edu|~gov|~jp
+/^https:\/\/[a-z]{10,14}\.fun\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{10,14}\.life\/tsk\/[\*_0-9a-zA-Z]{600,}$/$image,third-party
-/^https:\/\/[a-z]{10,14}\.life\/[%\*=\?_0-9a-zA-Z]{1000,}$/$third-party
+/^https:\/\/[a-z]{10,14}\.life\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{10,14}\.website\/tsk\/[\*_0-9a-zA-Z]{600,}$/$image,third-party
-/^https:\/\/[a-z]{8,15}\.com\/alpha\/\d{3,4}$/$third-party
-/^https:\/\/[a-z]{8,15}\.com\/beta\/\d{3,4}$/$third-party
-/^https:\/\/[a-z]{8,15}\.com\/gamma\/\d{3,4}$/$third-party
-/^https:\/\/[a-z]{8,15}\.com\/omega\/\d{3,4}$/$third-party
+/^https:\/\/[a-z]{8,15}\.com\/alpha\/\d{3,4}$/$xmlhttprequest,third-party
+/^https:\/\/[a-z]{8,15}\.com\/beta\/\d{3,4}$/$xmlhttprequest,third-party
+/^https:\/\/[a-z]{8,15}\.com\/gamma\/\d{3,4}$/$xmlhttprequest,third-party
+/^https:\/\/[a-z]{8,15}\.com\/omega\/\d{3,4}$/$xmlhttprequestthird-party
 /^https?:\/\/[a-z]{5,6}\.com\/script\/bootstrap\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{5,6}\.com\/script\/jquery\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{5,6}\.com\/script\/pattern\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
