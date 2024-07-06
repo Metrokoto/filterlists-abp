@@ -3,10 +3,8 @@
 ! Description: Block most third-party fonts. Allows for Material Icons and WOFF fonts in order to not break sites.
 ! Homepage: https://github.com/Metrokoto/filterlists
 ! Expires: 4 days (update frequency)
-! Version: 2 July 2024
+! Version: 6 July 2024
 ! Syntax: AdBlock
-
-!!! ALLOWLIST
 @@||ajax.googleapis.com/ajax/libs/webfont/$script,domain=bootsnipp.com|regexpal.com|typepad.com
 @@||amazonaws.com^$font,third-party,domain=dollartree.com
 @@||googleapis.com/ajax/libs/webfont/$domain=typepad.com
@@ -17,8 +15,6 @@
 @@||myfonts.net$domain=myfonts.com
 @@||typekit.com$font
 @@||typekit.net$script,font
-
-! Icon Packs
 @@/-icon
 @@/-icons
 @@/family=Material+Icons
@@ -36,13 +32,8 @@
 @@Material+Icons
 @@/font-awesome
 @@||fontawesome.com^
-
-! Privacy-friendly drop-in replacement for Google Fonts
-! [1] https://fonts.coollabs.io/
 @@||cdn.coollabs.io/fonts^
 @@||api.fonts.coollabs.io^
-
-!!! DENYLIST
 /cdn-cgi/pe/bag2?*googleapis.com*webfont.js
 /csp/fonts^$third-party
 ||alluremedia.com.au^$font,third-party
@@ -90,6 +81,4 @@
 ||webfont.fontplus.jp^$third-party
 ||webfonts.creativecloud.com^$third-party
 ||webfonts.sakura.ne.jp^$font
-
-! Privacy Essentials
 ||gstaticadssl.*.google.com^$font
