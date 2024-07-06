@@ -3,19 +3,14 @@
 ! Description: A curated list for advanced hardening. Minimize connections to third-party sites.
 ! Homepage: https://github.com/Metrokoto/filterlists
 ! Expires: 4 day (update frequency)
-! Version: 2 July 2024
+! Version: 6 July 2024
 ! Syntax: AdBlock
-
-! GENERAL BLOCKLIST
-! https://github.com/uBlock-user/uBO-Personal-Filters/blob/master/uPF.txt
-! https://github.com/crssi/Firefox/blob/master/uBO-Deny.txt
 ||*$ping
 .checkfront.com/lib/Control.Geocoder*.js$script
 .checkfront.com/reserve/lib/jquery.cookie*.js$script
 /fingerprintjs2$script
 /fp.js$script
 /loginmanager_sniff.js$script
-! ||dailykarma.io^$third-party
 ||assets.dailykarma.io^$third-party
 ||0dcde44a41.com^
 ||1105media.com^$third-party
@@ -64,7 +59,7 @@
 ||bimbolive.com^$third-party
 ||bizzabo.com^$third-party
 ||blitzen.com^$third-party
-||blogsmithmedia.com^$third-party
+||blogsmithmedia.com^$xmlhttprequest,third-party
 ||bloomapp-production.herokuapp.com^$third-party
 ||boldapps.net^$third-party
 ||bookthatapp.com^$third-party
@@ -80,7 +75,7 @@
 ||cbsinteractive.com^$domain=~etonline.com
 ||cdn.privacy.paramount.com^$third-party
 ||cdn.ravenjs.com^$third-party,script
-||channelsight.com^
+||channelsight.com^$xmlhttprequest
 ||chatango.com^$third-party
 ||chatbro.com^$third-party
 ||chimpstatic.com^$third-party
@@ -112,7 +107,6 @@
 ||dowjoneson.com^$third-party
 ||dropbox-dns.com$domain=~dropbox.com|~dropbox-dns.com
 ||dropbox.com$domain=~dropbox.com|~dropbox-dns.com
-! ||dropboxusercontent.com$domain=~dropbox.com|~dropbox-dns.com|~uniquestream.net
 ||drtuber.desi^$third-party
 ||duckduckgo.com^$third-party,domain=~duckduckgo.com|~spreadprivacy.com
 ||eagleapi.io^
@@ -127,7 +121,7 @@
 ||future-fie-assets.co.uk^$third-party
 ||future-fie.co.uk^
 ||future.net.uk^$third-party,~script
-||futurecdn.net^$~image
+||futurecdn.net^$xmlhttprequest
 ||geniuslinkcdn.com^$third-party
 ||geo.cnbc.com^
 ||geo.lovely-app.com^
@@ -146,7 +140,7 @@
 ||hawk-tech.co.uk^
 ||hawksearch.com^$third-party
 ||hextom.com^$third-party
-||hollywoodreporter.com/fe_data/$domain=hollywoodreporter.com
+||hollywoodreporter.com/fe_data/$~third-party
 ||hotjar-analytics.com^
 ||hubspot.com^$third-party
 ||hudo.com^$script
@@ -306,7 +300,7 @@
 ||tsyndicate.com^$third-party
 ||turnto.com^$third-party
 ||typekit.net^
-||typography.com^$third-party,~stylesheet
+||typography.com^$third-party,~stylesheet,~xmlhttprequest
 ||ubembed.com^
 ||upscore.com^$third-party
 ||urbanairship.com^$third-party
@@ -323,8 +317,6 @@
 ||slickstream.com^$third-party,domain=~slickstream.com
 ||sitescdn.net^$third-party
 ||addsearch.com^$third-party
-!!! https://github.com/uBlockOrigin/uAssets/commit/9c48940838eb4bff98f2a1a9b9cba1b92c3c8c9a
-! ||tags.tiqcdn.com^
 ||paykickstart.com^$third-party
 ||pressplay.io^$third-party
 ||convertkit.com^$third-party
@@ -333,7 +325,6 @@
 ||twitcount.com^$third-party
 ||launchpotato.com^$third-party
 ||doctify.com^$third-party
-! https://camerareadycosmetics.com/
 ||minmaxify.com^$third-party
 ||pwztag.com^$third-party
 ||beacon.kendall.ai^$third-party
@@ -343,23 +334,20 @@
 ||revenuehunt.com^$third-party
 ||omnisnippet1.com$third-party
 ||freegifts.io^$third-party
-! https://www.vitalydesign.com/pages/contact-us
 ||ip-api.com^$third-party
 ||marker.io^$third-party
 ||shoplift.ai$third-party
-! Shopify
 ||juniphq.com^$third-party
 ||postscript.io^$third-party
 ||shoplift.ai$third-party
-
-! GENERAL ALLOWLIST
-! https://github.com/crssi/Firefox/blob/master/uBO-Unbreak.txt
 @@*/lwa/WebPages/LwaClient.aspx$subdocument
 @@*/saml/$subdocument
+@@/clarity-*.js$~third-party,script
+@@/share-link-$~third-party,xmlhttprequest
 @@||a-msedge.net^$domain=bing.com
 @@||advertising.com^$domain=advertising.com
-@@||alexa.com^$domain=alexa.com
-@@||amzn.to^$domain=amzn.to
+@@||alexa.com^$~third-party
+@@||amzn.to^$~third-party
 @@||assets-jpcust.jwpsrv.com^$image
 @@||bing.com/maps^
 @@||bing.com/api/maps^
@@ -377,12 +365,9 @@
 @@||paypal.com^$subdocument,popup
 @@||play.vidyard.com^$subdocument,script
 @@||pov.spectrum.net^
-@@||udimg.com^$domain=udimg.com
+@@||udimg.com^$~third-party
 @@||udimg.com^$domain=urbandictionary.com
-! https://github.com/yokoffing/filterlists/issues/98
 @@||use.typekit.net^$script,font
-
-! GOOGLE
 ||accounts.google.com^$third-party,domain=~youtube.com
 ||ampcid.google.com^
 ||contributor.google.com^$third-party
@@ -397,14 +382,13 @@
 ||googlesyndication.com^
 ||googletagmanager.com^
 ||googletagservices.com^
-! https://github.com/badmojr/1Hosts/issues/1227
 ||jnn-pa.googleapis.com^$domain=~drive.google.com
 ||news.google.com^$third-party
-||play.google.com/log?
+||play.google.com/log?$xmlhttprequest
 ||play.google.com^$third-party
 ||scholar.google.com^$third-party,domain=~google.com
-||youtube.com/error_204?^
-||youtube.com/youtubei/v1/log_event^
+||youtube.com/error_204?^$xmlhttprequest
+||youtube.com/youtubei/v1/log_event^$xmlhttprequest
 @@||accounts.google.*/ServiceLogin$subdocument
 @@||apis.google.com^$script,domain=content.googleapis.com|dropbox.com
 @@||appspot.com^$subdocument,domain=cloud.google.com
@@ -424,36 +408,23 @@
 @@||gstaticadssl.*.google.com^$font
 @@||maps-api-ssl.google.com^$script,image
 @@||maps.google.*/maps$script,image
-@@||maps.googleapis.com/maps$script,image
+@@||maps.googleapis.com/maps$script,image,xmlhttprequest
 @@||mapsengine.google.com/map/embed$subdocument
 @@||youtube-ui.*.google.com^$subdocument,script
 @@||ytimg.*.google.com^$image
 @@||ytimg.com^$script
-
-! FACEBOOK
-! Logins (maybe more)
 ||connect.facebook.net^$third-party,domain=~atlassolutions.com|~facebook.com|~facebook.de|~facebook.fr|~facebook.net|~fb.com|~fb.me|~fbcdn.net|~fbsbx.com|~friendfeed.com|~instagram.com|~internalfb.com|~messenger.com|~oculus.com|~whatsapp.com|~workplace.com
 ||connect.facebook.com^$third-party,domain=~atlassolutions.com|~facebook.com|~facebook.de|~facebook.fr|~facebook.net|~fb.com|~fb.me|~fbcdn.net|~fbsbx.com|~friendfeed.com|~instagram.com|~internalfb.com|~messenger.com|~oculus.com|~whatsapp.com|~workplace.com
-! Facebook Plugins (3rd-party embedded plugins)
 ||facebook.com/plugins/$third-party,domain=~atlassolutions.com|~facebook.com|~facebook.de|~facebook.fr|~facebook.net|~fb.com|~fb.me|~fbcdn.net|~fbsbx.com|~friendfeed.com|~instagram.com|~internalfb.com|~messenger.com|~oculus.com|~whatsapp.com|~workplace.com
-! ||fbcdn.net^$third-party
-! @@||fbcdn.net^$third-party,domain=facebook.com|instagram.com|messenger.com|workplace.com|oculus.com|oculusvr.com|oculusbrand.com|oculusforbusiness.com|onavo.com
-! @@||fbcdn.net^$image,media
-
-! INSTAGRAM
 ||graph.facebook.com^$third-party,domain=~atlassolutions.com|~facebook.com|~facebook.de|~facebook.fr|~facebook.net|~fb.com|~fb.me|~fbcdn.net|~fbsbx.com|~friendfeed.com|~instagram.com|~internalfb.com|~messenger.com|~oculus.com|~whatsapp.com|~workplace.com
 ||graph.facebook.com/logging_client_events
 ||graph.facebook.com/?ids=*&callback=$script,third-party
 ||graph.facebook.com/*/activities?access_token=&event=
 ||graph.facebook.com/*?fields=supports_implicit_sdk_logging
-! ||graph.facebook.com^$domain=~facebook.com|~instagram.com
-! ||graph.instagram.com^$domain=~facebook.com|~instagram.com
 ||instagram.com^$third-party,~subdocument
 @@||instagram.com/p/$subdocument
 @@||instagram.com^$script
 @@||-instagram.*.facebook.com^$subdocument
-
-! TWITTER
 ||api.twitter.com^$third-party,domain=~x.com|~tweetdeck.com|~twitter.com|~twitter.jp
 ||platform.twitter.com^$third-party,domain=~x.com|~tweetdeck.com|~twitter.com|~twitter.jp
 ||twitter.com^$third-party,domain=~x.com
@@ -465,33 +436,17 @@
 @@||twimg.com^$image
 @@||twitter.com/i/videos/$subdocument
 @@||twitter.map.fastly.net^$domain=twitter.com
-! Breaks Twitter widget using Fanboy Annoyance
-! https://www.cnet.com/news/social-media/twitter-musk-news-timeline-riptwitter-trends-after-employees-resign/
 @@.twitterContainer
-
-! TIKTOK
-!||tiktok.com^$third-party
 ||ibytedtos.com^$third-party,domain=~tiktok.com
-
-! LINKEDIN
 ||licdn.com^$third-party,domain=~linkedin.com|~lnkd.in
 ||linkedin.com^$third-party
-
-! PINTEREST
 ||pinterest.com^$third-party
-
-! TWITCH
 ||twitch.tv^$third-party,domain=~twitch.tv
-
-! DISCORD
 @@||cdn.discordapp.com^$image
 ||discord.com^$third-party,domain=~discohook.org|~scam.gay
 ||discordapp.com^$third-party,domain=~discohook.org|~discord.com|~discordpackage.com|~mee6.xyz|~scam.gay
-
-! 3rd-party Payment Vendors / "Buy Now, Pay Later":
 ||global-e.com^$third-party
 ||static.rechargecdn.com^$third-party
-! ||getcatch.com^$third-party
 ||js.getcatch.com^$third-party
 ||pay.google.com^$third-party
 ||appleid.cdn-apple.com^
@@ -508,8 +463,6 @@
 ||klarnaservices.com^$third-party
 ||preorder-now.herokuapp.com^$third-party
 ||razorpay.com^$third-party
-! Blocks Paypal and Express Checkouts using Shopify:
-! ||paypal.com^$third-party,domain=~ebay.com|~paypal.com|~ticketmaster.com
 ||paypalobjects.com^$domain=~ebay.com|~paypal.com|~ticketmaster.com
 ||shop.app^$third-party
 ||shopbonsai.ca^$third-party
@@ -520,13 +473,8 @@
 /GooglePayButton
 /FacebookPayButton
 /ShopPay
-!||stripe.com^$third-party,domain=~curesarcoma.org|~koinly.io|~patreon.com|~nextdns.io|~controld.com|~quetext.com
-!||js.stripe.com^,domain=~curesarcoma.org|~koinly.io|~patreon.com|~nextdns.io|~controld.com|~quetext.com
-
-! 3p PAYMENT / LOGIN
 ##shopify-payment-terms
 ##.additional-checkout-buttons.grid__item
-! 3p sign-in buttons
 ##.sign-in-google-btn
 ##.google.primary.auth
 ##.apple.primary.auth
@@ -540,76 +488,32 @@
 ###googleContainer
 ###apple-signin-button
 ##.cl-socialButtons
-! Google sign-in on Indeed
 indeed.com##.icl-Card
-
-! BING
 ||bing.com^$third-party,domain=~bing.com|~login.live.com|~microsoft.com|~msn.com
-! https://github.com/AdguardTeam/AdguardFilters/issues/126174
 @@||bing.com/fd/ls/GLinkPing.aspx?
-! Bing reverse image search broken by EL
 bing.com#@#a[href*="/aclick?ld="]
 bing.com##.ins_exp.vsp
-! https://github.com/uBlockOrigin/uAssets/issues/9093
 bing.com##:matches-path(~/shop) a[href*="/aclick?"]:not(.vsp_ads)
-! https://github.com/easylist/easylist/issues/7240
-! EP - needed for Bing rewards?
 @@||bing.com/rewardsapp/reportactivity?
-
-! Microsoft Outlook breakage
 @@||pipe.aria.microsoft.com^$domain=outlook.live.com|outlook.office.com
 @@||browser.events.data.microsoft.com^$domain=outlook.live.com|outlook.office.com
-
-! EasyPrivacy exceptions
-! https://github.com/easylist/easylist/issues/4023
 @@||instant.page^$third-party
-
-! from https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/anti-allowlist.txt
-! EL
 /prebid1.$domain=9to5google.com|9to5mac.com|9to5toys.com|electrek.co|dronedj.com
 ||accuweather.com/bundles/prebid.
-! May cause sign-in trouble for US IP
 ||eventcom.api.np.km.playstation.net/event^
 ||g.doubleclick.net/tag/js/gpt.js$domain=accuweather.com
 ||networkworld.com/www/js/ads/
-
-! EP
 ||omtrdc.net/rest/
 ||smetrics.aem.playstation.com^
 ||walmart.com^*/logger^
-
-! NYT
-! ||myaccount.nytimes.com^
 ||messaging-notifications.api.nytimes.com^
-
-! HuffPost
 ||mapi.huffpost.com^
-
-! WP
 ||talk.washingtonpost.com^
 ||washingtonpost.com/subscribe/
 ||subscribe.washingtonpost.com^
-||washingtonpost.com/pwapiv2/$domain=washingtonpost.com
-
-! AMAZON
+||washingtonpost.com/pwapiv2/$xmlhttprequest,~third-party
 www.amazon.*###universal-detail-ilm,.a-spacing-none.a-section > .sg-row,.AdHolder,#percolate-ui-ilm_div > .celwidget:remove()
-
-! https://github.com/easylist/easylist/issues/16298
 ||connatix.com/scripts^
-!||connatix.com/scripts/facebook-pixel-script.js
-!||connatix.com/scripts/gaconnector.js
-!||connatix.com/scripts/microsoft-ad-script.js
-!||connatix.com/scripts/munchkin-script.js
-!||connatix.com/scripts/hotjar.js
-!||connatix.com/scripts/websights-script.js
-!||connatix.com/scripts/mkt-cke-script.js
-!||connatix.com/scripts/linkedin-script.js
-
-! https://connatix.com/advertisers
 ||neverbounce.com^$third-party
-
-! Outbrain
 ||outbrain.com^$third-party,domain=~sphere.com
-
-! Allow YouTube link redirect (Privacy Extended)
 @@||youtube.com/redirect?event=*q=http$document
