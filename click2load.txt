@@ -3,13 +3,11 @@
 ! Description: To be used in ABP (WARNING: click2load functionality will not work in ABP)
 ! Homepage: https://github.com/Metrokoto/filterlists
 ! Expires: 7 days (update frequency)
-! Version: 2 July 2024
+! Version: 6 July 2024
 ! Syntax: AdBlock
-
 ||airtable.com/embed*$subdocument,domain=~airtable.com
 ||art19.com/shows/$subdocument,domain=~art19.com
 ||bandcamp.com/EmbeddedPlayer/$subdocument,domain=~bandcamp.com
-!||codepen.io/$subdocument,domain=~codepen.io
 ||cdpn.io/$subdocument,domain=~cdpn.io
 ||checkout.shopify.com/$subdocument,domain=~shopify.com
 ||codepen.io/hubspot/embed/$subdocument,domain=~codepen.io|~theodinproject.com
@@ -59,10 +57,3 @@
 !||youtube-nocookie.com^$subdocument,domain=~youtube-nocookie.com|~bing.com|~google.com|~duckduckgo.com|~video.search.yahoo.com
 ||youtube-nocookie.com/embed^$subdocument,domain=youtube-nocookie.com|~bing.com|~google.com|~duckduckgo.com|~video.search.yahoo.com
 ||youtube.com^$subdocument,domain=~youtube.com|~bing.com|~chatreplay.stream|~google.com|~duckduckgo.com|~video.search.yahoo.com
-
-!!! DO NOT BLOCK
-! Tiktok embeds, GIFs
-!||cdn.embedly.com/widgets/$subdocument,domain=~embedly.com
-!||cdn.embedly.com/widgets/media.html*$subdocument,domain=~embedly.com
-! GIFs
-!||gfycat.com/$subdocument,domain=~gfycat.com
