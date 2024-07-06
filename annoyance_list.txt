@@ -5,7 +5,6 @@
 ! Expires: 4 days (update frequency)
 ! Version: 6 July 2024
 ! Syntax: AdBlock
-
 wccftech.com##.related-story, .related-stories.aside
 mspoweruser.com##.left-sidebar
 search.brave.com##.download-button
@@ -651,8 +650,6 @@ ygorganization.com###custom_html-2 > .custom-html-widget.textwidget
 zdnet.com##.c-shortcodePinbox, .c-shortcodePinbox-carousel, .c-shortcodePinbox-textList, .g-outer-spacing-bottom-large.c-globalBreakingNews, .c-listingVertical, .related-stories.module, .alignRight.relatedContent, .breaking-news-container, .alignNone.relatedContent
 zoosk.com##.article__related, .newsletter
 ||www.web-hosting.net.my/banner$image
-
-! General
 -push-notifications/$script
 ||cdn.carrotquest.app^$third-party
 ||cdn.pn.vg^$third-party
@@ -671,76 +668,46 @@ zoosk.com##.article__related, .newsletter
 ||circleid.com/images/industry/sponsor$image
 ||crypto.games/banners$image
 ||fmoviesz.to/assets/_bnx$image
-
-! SOCIAL BUTTONS
 ##a[href^="https://twitter.com/intent/tweet"]
 ##a[href^="https://www.facebook.com/login.php"]
-! ##a[href^="mailto:"]
 ##.subscribe-widget
 ##.facebook-icon
 ##.flipboard-icon
 ||*icon-fb.png$image
 ||*icon-tw.png$image
 ##.icon-twitter
-! https://github.com/yokoffing/filterlists/issues/100
-! ##.follow
 adguard.com##.content-social
-! https://github.com/easylist/easylist/issues/16243
 livescience.com##.buttons-social
 kellegram.xyz##.socials
-
-! AUDIO/VIDEO PLAYERS
-! ||remixd.com^$third-party
-! https://www.gq.com/story/jason-belmonte-bowling-profile
 ||player.cnevids.com^
-! https://www.ghacks.net/2023/07/04/firefox-115-new-esr-base-and-some-add-ons-may-be-blocked-from-running-on-certain-sites
 ||readaloud.googleapis.com^$script
-! Block players that usually play content not directly related to the page
 ||redvideo.io^$domain=~redvideo.io
-!||cnevids.com^$third-party,domain=~gq.com
 ||kaltura.com^$third-party,domain=~financialaidtv.com
-! https://github.com/yokoffing/filterlists/issues/117
 @@||cdnapi-legacy.kaltura.com^$xmlhttprequest,domain=yle.fi
-! https://www.appdate.lk/technology/2023-browser-showdown/
 ||beyondwords.io^
 ||code.responsivevoice.org^
-! https://www.wyff4.com/article/videocast-morning-storms/44780778
-! ||htvapps.com^
 ||hearst.io^
 @@||htv-streaming-otfp.hearst.io
 @@||nitehawk.hearst.io
 ||hearstapps.com^
 ||htvtools.us^
-! https://www.delish.com/food-news/a44120266/mcdonalds-grimace-shake/
 ||hearstgames.com^
 @@||hips.hearstapps.com^$image
-! ||hearstapps.com^
-! ||oply.hearstapps.com^
-! ||assets.hearstapps.com^
 delish.com##.video-player, .journey-unblur-content
-! Brightcove
 ||brightcove.net^$third-party
 @@||brightcove.^$xmlhttprequest
 @@||media.brightcove.com^$image
 @@||media.brightcove.com^$media,domain=players.brightcove.net
 @@||players.brightcove.net^$script
-! JW Player
 ||entitlements.jwplayer.com^
 ||jwpsrv.com^$third-party
-!||jwplayer.com^$third-party,domain=~menshealth.com
 @@||cdn.jwplayer.com^$xmlhttprequest
 @@||content.jwplatform.com^$xmlhttprequest,script
 @@||jwpcdn.com/player/plugins/vast/$script
 @@||jwpcdn.com^$font
-!!! @@||jwpltx.com^$image
 @@||jwpsrv.com^$subdocument
-! https://www.news24.com
-! paywalled audio player
 ||oovvuu.io^$third-party
 ||oovvuu.media^$third-party
-
-! https://github.com/brave/adblock-lists/blob/master/brave-lists/brave-ios-specific.txt
-! Invideo ads
 ||api.fw.tv^
 ||avantisvideo.com/avm/js/video-loader.js$script,third-party
 ||c.jsrdn.com^$script,domain=muscleandfitness.com
@@ -779,27 +746,18 @@ delish.com##.video-player, .journey-unblur-content
 ||voqally.com/hub/app/
 ||vplayer.newseveryday.com^
 ||widgets.outbrain.com^$domain=cnn.com
-
-! Comments not covered by other annoyances lists
 ||championat.com^$third-party
 ||yotpo.com^$third-party
 @@||staticw2.yotpo.com/assets/yotpo-widget-font
 ||lifehacker.com/embed/comments^$subdocument
 ||jetpack.wordpress.com/jetpack-comment/$subdocument
 ||cdn.commento.io^$third-party
-! ||comment.youmaker.com^
 ||youmaker.com^$third-party
 ||giscus.app^$third-party
-
-! Annoying anti-adblock
 ||images.cointelegraph.com/images/*_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy9hNGFkNDk1ZmMwNGJkOTdmNzE2NDlhNDhkNjAwM2QwMC5wbmc=.png$image
-
-! Chat modules
 ||apexchat.net^$third-party
 ||crisp.chat^$third-party
 ||customerly.io^$third-party
-! ||chat.customerly.io^$third-party
-! ||messenger.customerly.io^$third-party
 ||eesysoft.com^$third-party
 ||forum.kirupa.com/embed/comments$subdocument
 ||livechatinc.com^$third-party
@@ -808,20 +766,12 @@ delish.com##.video-player, .journey-unblur-content
 ||salesforceliveagent.com
 ||widget.intercom.io^$third-party
 ||yappaapp.com^$third-party
-
-! Block requests to unused images
 ||bgr.com^$domain=dirt.com
 ||goldderby.com^$domain=dirt.com
 ||rollingstone.com^$domain=dirt.com
 ||spy.com^$domain=dirt.com
 ||tvline.com^$domain=dirt.com
-
-! from https://github.com/DandelionSprout/adfilt/blob/master/AnnoyancesList
-! AAB prompts
 /^https://[a-z]{8,25}\.com/v2[a-zA-Z0-9_-]{70,}$/$ping,third-party
-
-! from https://github.com/uBlock-user/uBO-Personal-Filters/blob/master/uPF.txt
-! Be sure to add scriplets https://github.com/uBlock-user/uBO-Personal-Filters#requirements
 9anime.*##.popover, #tags, .hd-buttons.row, #comment, .comment.widget > .widget-title, .comment.widget > .widget-body, .socials, #social, .twitter-follow-button, .sticky, .share, .text-center.crop.widget, .text-center.widget, .azlist, .mb20, [href*="twitter.com"], .alert, #fb-root, [href*="dynamicadx.com/"], [href*="popmonetizer.com/redirect"], .textlinks:remove()
 anime8.ru##.text-center.alert.ann-home, #btnShowComments:remove()
 animehub.ac##.footer-follow, .sb-subs.goblock > .clearfix, .comments, .detail-anime.goblock > .go-full.goblock-content > .goblock-bottom, .gc-share.gc-icon, .gc-comments.gc-icon, .dialog-ovelay, #sidebar > .clearfix\, #discordapp, #info_player > p, #info_player > div > div:remove()
@@ -843,7 +793,6 @@ kisscartoon.nz###divComments:remove()
 myanimelist.net##body:not(.ownlist):style(background:none !important)
 myanimelist.net##.btn-mal-service,.banner-header-anime-straming,.footer-link-icon-block,.clearfix.index-watch-description,.anime-detail-header-affiliate,.amazon, .anime_discussions.widget,.video-providers,.js-sns-icon-container,.icon-block-small.js-sns-icon-container,.promotional-video,.anime-detail-header-video,.mb4.di-ib,.fb-page,.root,[id^="div-gpt-ad"],.watch-description,.text-ad-links,.right_top_ad,.mal-ad-unit,.gdpr-modal-ad,.ad-skin-side-bg,.mal-side-ad--l,.mal-side-ad--r,.mal-live-pop-up,.free-manga-pop-up,[href^="https://mallive.myanimelist.net"], [href^="https://otsukai.com/"], [src*="/banner/"],.banner-footer-anime-streaming,.btn-affiliate,.left-info-block-manga-store-button,.btn-forum-manga-store,.mb24.mt24.pb24.pt24,.footer-app,div[style="overflow: hidden; padding: 10px 0; border-bottom: solid #cdcdcd 1px"],div[style="padding:16px 0px 0px 0px;"],.amazon-ads,.border_top:remove()
 mega.nz##.ads-left-block, .ads-right-block, .active.top-login-warning, .red.download-button.button, .checkbox-bl.download:remove()
-!reddit.com##.promotedlink, [id^="ad_"], #redesign-beta-optin-btn, [href="/premium"], .comment-visits-box, .premium-banner-outer, .share, #adblock-test, .giftgold, .snoovatar-link, .give-gold-button, .bottom > .spacer, .happening-now-wrap, .hohoho-header, .hohoho, #gtm-jail:remove()
 speedtest.net##.high-placeholder.pure-u-1, .u-c.pure-u-custom-ad-rectangle, .u-c.pure-u-custom-ad-skyscraper, .top-placeholder.pure-u-1, .eot-dd-content, .u-c.pure-u-1-4:nth-of-type(1) > ul.menu-footer:nth-of-type(2), .lowerboard-content:remove()
 speed.cloudflare.com##.mapboxgl-map:upward(1):remove()
 thewrap.com##style:has-text(wallkit-paywall-block):remove()
@@ -852,290 +801,106 @@ thewrap.com##.wallkit-paywall-block
 thewrap.com##.wrappro-paywall-member-link-for-reader
 torrentfreak.com##.widget_text, .o-widget--rotated.o-widget, .comments, .footer__widget--stats, .preview-article__comments, .hero__comments, .socials:remove()
 translate.google.com##.notification-area,.gt-cc:remove()
-
-!!! REDDIT
-! Hide AutoModerator comments
-! https://www.reddit.com/r/uBlockOrigin/comments/140lp15/any_way_to_hide_automoderator_comments_with_ublock/
 reddit.com##[data-testid="comment_author_link"][href="/user/AutoModerator/"]:upward(.Comment)
 reddit.com##.comment .author[href="https://old.reddit.com/user/AutoModerator"]:upward(.comment)
-! To hide AutoModerator, anyone who contains "mod" or "bot"
 old.reddit.com##.comment[data-author="AutoModerator"]
-! old.reddit.com##.comment[data-author*="mod"]
-! old.reddit.com##.comment[data-author*="bot"]
-! To hide any mod
-! old.reddit.com##.comment:has(.entry .tagline .moderator)
-
-! credit for most: https://www.reddit.com/r/uBlockOrigin/comments/vyb5an/got_tired_of_reddit_shoving_crap_in_the_header/
-! Clean up the Reddit header bar:
-! Advertise
 www.reddit.com,www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##header [aria-label="Advertise"]
-! r/Popular
 www.reddit.com,www.reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##header [href="/r/Popular/"]
 www.reddit.com##.icon-popular.icon
-! r/all
 www.reddit.com##header [href="/r/all/"]
-! Reddit Live
 www.reddit.com##header [href="/rpan/"]
-! Shop Avatars
-!www.reddit.com##header svg+svg+svg>[d^="M6.47.828a.5.5"]:upward(2)
 www.reddit.com##header button:has-text(/Shop Avatars/):upward(1)
-! https://www.reddit.com/r/firefox/comments/wzvufu/comment/im92ywy/
 www.reddit.com##:xpath(//button[contains(text(),'Shop Avatars')])
-! Coin Icon
 www.reddit.com###COIN_PURCHASE_DROPDOWN_ID
 www.reddit.com##.icon-coins
-! Hide Related sidebar in the new-new reddit
 www.reddit.com##.block.xs\:pt-md.pdp
-! Reddit premium banner 2023
 reddit.com##._1b1Jalg2nxA_Z-BjKXRfAV
-
-! Block AutoModerator messages
 reddit.com##._1YCqQVO-9r-Up6QPB9H6_4 > div > div:has-text(AutoModerator)
-
-! hide icons
 www.reddit.com##._23q1waDr4n_2fR5A7zcZzb.x0hiXHicn7r3BG9m1FJH4
-
-! hide Moderators (sometimes)
-! https://www.reddit.com/r/uBlockOrigin/comments/yfgxaw/in_new_reddit_how_do_i_remove_the_moderators_box/
 reddit.com##div._2vEf-C2keJaBMY9qk_BxVn:nth-of-type(4)
-
-! hide online status in menu
-! https://www.reddit.com/r/uBlockOrigin/comments/wor4ov/anyone_know_how_to_block_the_online_status_menu/
 www.reddit.com##[role="menu"] button:has-text(Online Status)
-
-! TWITCH
-! from https://mypdns.org/my-external-stuff/ublockorigin-rules/-/tree/master/rules/blockrules.txt
 twitch.tv##.prime-offers
 twitch.tv##.extension-view__iframe
 twitch.tv##.headliner-ad
 twitch.tv##.front-page-carousel
-!twitch.tv##.channel-panels-container
-! Animated Emotes; can be disabled in settings
 twitch.tv##.chat-input.bGyiZe.Layout-sc-1xcs6mc-0 > .Layout-sc-1xcs6mc-0
-! Top gifters
 twitch.tv##.chat-room__content.jmUA-dj.Layout-sc-1xcs6mc-0 > div.Layout-sc-1xcs6mc-0:nth-of-type(1)
-! Drops, hype train
 twitch.tv##.chat-room__content.jmUA-dj.Layout-sc-1xcs6mc-0 > div:nth-of-type(2)
-! Chat message: user subscribed with prime!
 twitch.tv##.user-notice-line--highlighted.user-notice-line.ekipGw.InjectLayout-sc-1i43xsx-0
-
-! FACEBOOK
-! FB Sponsored posts / 3 structures-matching filter / TEST version / Remove the `:style()` ending if no false positives found.
-! https://www.reddit.com/r/uBlockOrigin/comments/pjk3x3/getting_ads_on_fb_anyone_knows_how_to_block_this/
-! facebook.com##[role="feed"] span[id] a[href="#"]>span>span, [role="feed"] span[id] a[href="#"]>span>b:not(:has-text(/(\s|\d|^$)/)):upward([role="feed"]>div)
-! "Suggested for you"
-! https://www.reddit.com/r/uBlockOrigin/comments/pjmtma/facebook_suggested_for_you_old_code_doesnt_seem/
-! facebook.com##[role="feed"]>div:has-text(/^(Suggested|Recommended)/)
-
-! from https://www.reddit.com/r/uBlockOrigin/wiki/solutions
-! Why are these not included by default?
-
-! FACEBOOK
-! Ads in right column
-! facebook.com##div[data-pagelet="RightRail"] > div:not([data-visualcompletion]) > div > div[class]:has(> div[class] > div[class] div[class] > a[aria-label][href^="https://l.facebook.com/l.php?u="][target="_blank"])
-! Feb 2021 solution
-! facebook.com##div[role="complementary"] > div > div > div > div > div > span
-
-! https://www.reddit.com/r/uBlockOrigin/wiki/solutions/#wiki_facebook
-! Suggested for you
 www.facebook.com##[aria-posinset] div:not(:only-child)>div:only-child>div:only-child>div:first-child[class=""]>div:not([data-0]):has-text(/^Suggested/):upward([aria-posinset])
-! People You May Know
 www.facebook.com##[aria-posinset] [aria-label="See all"][href="/friends/"]:upward([aria-posinset])
-! Suggested groups
 www.facebook.com##[aria-posinset] [aria-label="See more groups"][href="/groups/discover/"]:upward([aria-posinset])
-! Reels and short videos
 www.facebook.com##[aria-posinset] [aria-label="See more"][href="/reel/?s=ifu_see_more"]:upward([aria-posinset])
-! Marketplace
 facebook.com##[aria-label*="Marketplace"] object > a[href^="/ads/"] > span:not(:empty):upward(11)
-
-! GOOGLE
-! block subdomain request can generate breakage - disable network filter if you have any breakage
 ||consent.google.com^
-! Google "People also searched for"
 google.*##[id^="eob_"]
-! Annoying "Sign-in with Google" pop-ups
-! https://www.troddit.com/r/brave_browser/comments/uzzmp7/is_it_possible_block_the_sign_in_with_google/iaeqazb/
-! https://www.bleepingcomputer.com/news/security/duckduckgo-now-blocks-google-sign-in-pop-ups-on-all-sites/
-! https://github.com/yokoffing/filterlists/issues/75
-!||accounts.google.com/gsi/client$script,third-party
 ||accounts.google.com/gsi/$xmlhttprequest,third-party,domain=~auth.23andme.com
-
-! REDDIT
-! Hide Reddit 'Top Broadcast Now' & 'Top livestream'
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion##a[href^="/rpan/"] > h3:has-text(/Top (livestream|broadcast)/):upward(7)
-! Block downloading
-!||redd.it/*.m3u8^$domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
 ||strapi.reddit.com^$xmlhttprequest,domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
-! https://github.com/yokoffing/filterlists/issues/38
 @@||v.redd.it^$xmlhttprequest,domain=reddit.com|reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion
-
-! TWITTER
-! [Nov 2023] from https://www.reddit.com/r/uBlockOrigin/wiki/solutions/#wiki_twitter
-! My Timeline - no inserted sections (Who to follow/Topics to follow, etc.)
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##[aria-label="Timeline: Your Home Timeline"] div[style^="transform: translateY"][style*="position: absolute;"]:not(:first-child:has-text(/^Show \d\d? Tweets?$/)):not(:has(article, [href^="/i/status/"], [role="progressbar"]))
-! Other Timelines - no inserted sections (Who to follow/Topics to follow, etc.)
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##[aria-label$="’s posts"] div[style^="transform: translateY"][style*="position: absolute;"]:not(:has(article, [href^="/i/status/"], [role="progressbar"]))
-
-! [User] follows
-! https://github.com/yokoffing/filterlists/issues/122#issuecomment-1828512994
-! x.com,twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##article div>svg>g>[d^="M17.863 13.44c1.477"]:upward(article)
-! Follow/Recommended Topic | "[Name of Topic] See more"
 x.com,twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##article [aria-label^="Follow Topic"], article [aria-label^="Recommended Topic"]:upward(article)
-! More Tweets
 x.com,twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##[aria-label="Timeline: Conversation"] h2>div>span:has-text(/^More Tweets$/):upward([style^="transform"])
 x.com,twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##[aria-label="Timeline: Conversation"] h2>div>span:has-text(/^More Tweets$/):upward([style^="transform"])~div
-! Sidebar - Topics to follow
 x.com,twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##[data-testid="sidebarColumn"] [href="/i/topics/picker/home"]:upward(section)
-! Sidebar - Trending now/Trends for you
 x.com,twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##[aria-label$="trending now" i]
-! Sidebar - Who to follow/You might like
 x.com,twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##[aria-label="who to follow" i]:upward(1)
-! Sidebar - Relevant people
 x.com,twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##[aria-label="relevant people" i]:upward(1)
-! Login popup
-!twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div#layers div[data-testid="sheetDialog"]:upward(div[role="group"][tabindex="0"])
-! from https://github.com/DandelionSprout/adfilt/blob/master/TwitterPureReadingExperience.txt
-! Removes login nags
 x.com,twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion#?##layers > div[class*=" "]:first-of-type:has(a[href="/i/flow/signup"])
-! Promoted (Nov 2022)
-! https://www.reddit.com/r/uBlockOrigin/comments/z73yk9/twitter_promoted_tweets_showing_up/
 x.com,twitter.com##[data-testid="tweet"]:has-text(/Promoted$/)
-
-! Source: https://github.com/DandelionSprout/adfilt/commit/1efdbabb361af4dd05a24cf766d1dafc723ab02f
-!! Removes a "See What's Happening" prompt at the bottom of some tweet chains
 twitter.com,x.com#?#div[data-testid=primaryColumn] div:has(> div > div > a[href="/login"])
-!! Removes a login prompt when visiting "/intent/follow"-type links in mobile environments
-! https://twitter.com/intent/follow?screen_name=mesitsu (13/04/2020)
 x.com,mobile.twitter.com,mobile.twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion#?#a[href="/i/flow/signup"][dir=auto][role=link][data-focusable=true]:upward(7)
-! Removes the "Aren't you on Twitter??" prompt in the upper right of user timelines
-! https://twitter.com/nasuno_Posi
 twitter.com,x.com##.js-signup-call-out
-! Twitter Mobile
-!! Aims to remove the login overlay prompt when browsing down an account's timeline
 mobile.twitter.com,x.com##.rn-13w96dm
 mobile.twitter.com,x.com##.rn-1kihuf0.rn-1awozwy
-
-! BING
-! Hide rebate
 bing.com##.rebateGlobalDecoration
-! Hide lock icon near results
 bing.com##.secure_icon
-! Was this response helpful?
 bing.com##.survey-opt-in-wrapper
-! Search box: Microsoft Suggests, Try the new copilot
 bing.com###sa_zis_Banner
-! Search box: Chat with Copilot popup
 bing.com##.popup
-! Related search module
 bing.com##.b_rrsr
 bing.com###relatedSearchesLGWContainer
-! Images overtaking search results
 bing.com##.b_imgsmall.b_imgans.b_mopb.b_mop.b_ans
-! Videos overtaking search results
 bing.com##.b_vidAns.b_mop.b_ans
-! People also ask
 bing.com##.df_alaskcarousel.rqnaContainerwithfeedback
-! Explore more from Wikipedia
 bing.com##.b_remod
-! Related searches near page numbers
 bing.com###brsv3
-! Explore beside Video result
 bing.com##.slide-in
-! Chat with copilot, top right
 bing.com###b_op_anch
 bing.com###bnp\.nid\.63928
-! Copilot chat box at bottom of page
 bing.com##.wpt_bc_container
-! "Related news" in News module
 bing.com##.rns_more
-! "Explore more news" in News module
 bing.com##.nart_bak.nart_content
-! "Trending searches you might like" in search results
 bing.com###b_mrs_DynamicMRS
-! Stories, AI generated slide shows
 bing.com##.sto_slides
-
-! Source: https://github.com/letsblockit/letsblockit/issues/642
-! "Copilot" in menu next to "All" and "News"
-!bing.com###b-scopeListItem-conv
-! Deep search / Copilot icon next to the search box
 bing.com##.b_phead_chat_link
-! Search box copilot
 bing.com##.bordertop
-! "Chat" button near page numbers
 bing.com##.b_pag_lets_chat
-! Hide related and recommended content
-! Most of "explore", "people also", "related search" sections and side panel
-!bing.com###b_context
-! Hide most modules around search results
-!bing.com##.b_ans
-! Recommended section in the search box. Requires style fix to prevent expanding of the search box
 bing.com##.rs_drw
 bing.com###sa_requery
-! Related to recent searches in the search box
 bing.com###sa_zis_SSE
-! "Explore further" sublinks
 bing.com##.scs_child_rpr
-! "Tags"
-!bing.com##.batg
-! Side links widget
-!bing.com###wikiWidgetContainer
-! Hide Jump to search icon
 bing.com###mfa_root
-! Hide quick highlight (lightbulb) icons
 bing.com##.scs_icn
-! "Rewards" alert
 bing.com###id_mobbubpos
-! Searches you might like
 www.bing.com###b_mrs_BelowBOPAds
-! Top songs
 www.bing.com##.l_ecrd_twoimgset
-
-! Linkedin
-! Suggested Posts
-! https://www.reddit.com/r/uBlockOrigin/comments/17yr4s5/blocking_linkedin_suggested_posts/
 linkedin.com##.relative:has-text(Suggested)
-
-! Github
-! Hide prompts to test copilot 
 github.com##react-app[app-name="react-code-view"] button[data-testid="copilot-popover-button"]
-! Hide the "Overwhelmed by notifications?" prompt 
 github.com##.js-unwatch-suggestions
-
-! Aggressive Fandom Wiki
 fandom.com##.wds-global-footer__main
-! https://www.reddit.com/r/uBlockOrigin/comments/z0i6qy/aggressive_fandom_wiki_filter_set/
-
-!!! NYT
-! "To our Readers" note
-! https://www.reddit.com/r/uBlockOrigin/comments/wpwuqu/how_can_i_hide_this_on_nyt_page/
 nytimes.com##.css-brw7hw, div[aria-labelledby="editorial-sub-messaging-header"]
-
-!!! WCO Fun streaming
 wcofun.net##.share-button
 wcofun.net##.jcarousel-wrapper
 wcofun.net##.episode-descp
 ||www.wcostream.org/$image
-
-! cig sites
 ##.col.cmp-footer__warnings
-
-! embedded widget chat service
 ||cbox.ws^
-
-! Unsplash+ images
 unsplash.com##img[src^="https://plus.unsplash.com/"]:upward(figure)
-
-! Junk university sites
 ||takemyproctoringexam.com^
 ||onlineclasshero.com^
-
-! Mangapill
-! closed without explaination:
-! https://github.com/easylist/easylist/issues/16124
 mangapill.com##.mb-3.container > .justify-between.items-center.flex, div.container > .justify-between.items-center.flex
-
-! from https://github.com/Yuki2718/adblock2/blob/main/japanese/jpfp-ub.txt
 /^https:\/\/[a-z]{10,14}\.cam\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{10,14}\.casa\/tsk\/[\*_0-9a-zA-Z]{600,}$/$image,third-party
 /^https:\/\/[a-z]{10,14}\.casa\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
@@ -1151,8 +916,6 @@ mangapill.com##.mb-3.container > .justify-between.items-center.flex, div.contain
 /^https?:\/\/[a-z]{5,6}\.com\/script\/bootstrap\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{5,6}\.com\/script\/jquery\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{5,6}\.com\/script\/pattern\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
-
-! import Clean Reading Experience list
 9to5mac.com##p strong:has-text(/^Related/):upward(p)
 aljazeera.com##.more-on
 businessinsider.com##p > strong:has-text(/^Read More:/):upward(p)
