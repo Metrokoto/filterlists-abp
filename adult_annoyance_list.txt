@@ -1,13 +1,13 @@
 [Adblock Plus 3.6]
 ! Title: ❌ Adult Annoyances List for ABP
 ! Description: Block annoyances on adult sites
-! Updated: 2 July 2024
+! Updated: 6 July 2024
 ! License: https://creativecommons.org/licenses/by/3.0/
 ! Homepage: https://github.com/Metrokoto/filterlists
 ! Expires: 4 days (update frequency)
 
 ! Network Requests
-||yeswegays.com^
+@@||yeswegays.com^
 @@/contents/images-banners/*$domain=yeswegays.com
 ||bonertraffic.mobi^$third-party
 ||cc.boyfriendtv.com/bftv/*.jpg$image
