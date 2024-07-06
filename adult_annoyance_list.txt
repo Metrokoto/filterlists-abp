@@ -5,9 +5,6 @@
 ! License: https://creativecommons.org/licenses/by/3.0/
 ! Homepage: https://github.com/Metrokoto/filterlists
 ! Expires: 4 days (update frequency)
-
-! Network Requests
-@@||yeswegays.com^
 @@/contents/images-banners/*$domain=yeswegays.com
 ||bonertraffic.mobi^$third-party
 ||cc.boyfriendtv.com/bftv/*.jpg$image
@@ -27,8 +24,6 @@
 ||nutaku.com^
 ||xhamsterlive.com$subdocument
 ||myvidster.com/ads$image
-
-! Generic cosmetic filters
 ##.b-thumb-col
 ##.tabs-related.tabs
 ##.related.thumb-list
@@ -46,10 +41,7 @@
 ##.livecams
 ###list_videos_related_videos
 ##.related-content
-! Easylist rule causes video player to be too large
 manporn.xxx#@#.adv-sidebar
-
-! Cosmetic filters
 429men.com##.fp-brand
 wankoz.com##.container-aside, .related-videos
 gay4porn.com###list_videos_recommended_videos
@@ -164,8 +156,6 @@ yeswegays.com###list_videos_related_videos_ajax > .related-videos.box, .categori
 yeswegays.com##div.box:nth-of-type(3), .video-comment.comments.box, .wrapper-holder > div.container, .footer, .thumb_spots
 youporngay.com###relatedVideos
 youporngay.com###videoComments, .inlineTooltipCntr
-
-! Sniffies website
 sniffies.com##.ng-star-inserted > .ng-star-inserted.chatholder-row-item
 sniffies.com##.ng-star-inserted.ng-tns-c191-10.house.sidebar.overset-container
 ||site.sniffiesassets.com/upgrade-ads/images/s*.jpg$image
