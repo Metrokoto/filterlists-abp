@@ -497,7 +497,6 @@ bing.com##:matches-path(~/shop) a[href*="/aclick?"]:not(.vsp_ads)
 @@||bing.com/rewardsapp/reportactivity?
 @@||pipe.aria.microsoft.com^$domain=outlook.live.com|outlook.office.com
 @@||browser.events.data.microsoft.com^$domain=outlook.live.com|outlook.office.com
-@@||instant.page^$third-party
 ||messaging-notifications.api.nytimes.com^
 ||mapi.huffpost.com^
 ||talk.washingtonpost.com^
