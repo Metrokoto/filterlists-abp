@@ -3,7 +3,7 @@
 ! Description: A curated list for advanced hardening. Minimize connections to third-party sites.
 ! Homepage: https://github.com/Metrokoto/filterlists
 ! Expires: 4 day (update frequency)
-! Version: 6 July 2024
+! Version: 7 July 2024
 ! Syntax: AdBlock
 ||*$ping
 .checkfront.com/lib/Control.Geocoder*.js$script
@@ -498,14 +498,6 @@ bing.com##:matches-path(~/shop) a[href*="/aclick?"]:not(.vsp_ads)
 @@||pipe.aria.microsoft.com^$domain=outlook.live.com|outlook.office.com
 @@||browser.events.data.microsoft.com^$domain=outlook.live.com|outlook.office.com
 @@||instant.page^$third-party
-/prebid1.$domain=9to5google.com|9to5mac.com|9to5toys.com|electrek.co|dronedj.com
-||accuweather.com/bundles/prebid.
-||eventcom.api.np.km.playstation.net/event^
-||g.doubleclick.net/tag/js/gpt.js$domain=accuweather.com
-||networkworld.com/www/js/ads/
-||omtrdc.net/rest/
-||smetrics.aem.playstation.com^
-||walmart.com^*/logger^
 ||messaging-notifications.api.nytimes.com^
 ||mapi.huffpost.com^
 ||talk.washingtonpost.com^
