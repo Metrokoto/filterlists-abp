@@ -449,8 +449,8 @@
 ||static.rechargecdn.com^$third-party
 ||js.getcatch.com^$third-party
 ||pay.google.com^$third-party
-||appleid.cdn-apple.com^
-||payments-amazon.com^$third-party
+||appleid.cdn-apple.com$domain=~apple.com|~icloud.com
+||applepay.cdn-apple.com$domain=~apple.com|~icloud.com||payments-amazon.com^$third-party
 ||affirm.com$third-party
 ||afterpay.com^$third-party
 ||shoprunner.com^$third-party
@@ -463,6 +463,7 @@
 ||klarnaservices.com^$third-party
 ||preorder-now.herokuapp.com^$third-party
 ||razorpay.com^$third-party
+||quadpay.com^$third-party
 ||paypalobjects.com^$domain=~ebay.com|~paypal.com|~ticketmaster.com
 ||shop.app^$third-party
 ||shopbonsai.ca^$third-party
