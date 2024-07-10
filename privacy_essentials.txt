@@ -3,7 +3,7 @@
 ! Description: A curated list for advanced hardening. Minimize connections to third-party sites.
 ! Homepage: https://github.com/Metrokoto/filterlists
 ! Expires: 4 day (update frequency)
-! Version: 7 July 2024
+! Version: 10 July 2024
 ! Syntax: AdBlock
 ||*$ping
 .checkfront.com/lib/Control.Geocoder*.js$script
