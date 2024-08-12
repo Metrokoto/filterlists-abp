@@ -3,7 +3,7 @@
 ! Description: Hide annoyances and extraneous page elements ("related articles", "read more", etc.) not covered by other lists
 ! Homepage: https://github.com/Metrokoto/filterlists
 ! Expires: 4 days (update frequency)
-! Version: 6 July 2024
+! Version: 12 August 2024
 ! Syntax: AdBlock
 wccftech.com##.related-story, .related-stories.aside
 mspoweruser.com##.left-sidebar
@@ -754,6 +754,7 @@ delish.com##.video-player, .journey-unblur-content
 ||cdn.commento.io^$third-party
 ||youmaker.com^$third-party
 ||giscus.app^$third-party
+||talk.hyvor.com^$third-party
 ||images.cointelegraph.com/images/*_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy9hNGFkNDk1ZmMwNGJkOTdmNzE2NDlhNDhkNjAwM2QwMC5wbmc=.png$image
 ||apexchat.net^$third-party
 ||crisp.chat^$third-party
