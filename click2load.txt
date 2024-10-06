@@ -3,7 +3,7 @@
 ! Description: To be used in ABP (WARNING: click2load functionality will not work in ABP)
 ! Homepage: https://github.com/Metrokoto/filterlists
 ! Expires: 7 days (update frequency)
-! Version: 8 July 2024
+! Version: 6 October 2024
 ! Syntax: AdBlock
 ||airtable.com/embed*$subdocument,domain=~airtable.com
 ||art19.com/shows/$subdocument,domain=~art19.com
