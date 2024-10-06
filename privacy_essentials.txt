@@ -545,7 +545,7 @@ www.amazon.*###universal-detail-ilm,.a-spacing-none.a-section > .sg-row,.AdHolde
 ||player.megaphone.fm/$subdocument,third-party
 ||player.simplecast.com^$subdocument,third-party
 ||player.twitch.tv/$subdocument,third-party
-||player.vimeo.com/video^$subdocument,third-partym
+||player.vimeo.com/video^$subdocument,third-party
 ||playlist.megaphone.fm/$subdocument,third-party
 ||podbean.com/player-v2/$subdocument,third-party
 ||quizlet.com/$subdocument,third-party
