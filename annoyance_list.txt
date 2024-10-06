@@ -982,6 +982,8 @@ vox.com##.c-article-footer
 wired.com##.callout--has-top-border.gYlOfh.GenericCalloutWrapper-zksK
 zdnet.com##p strong:has-text(/^SEE/):upward(p)
 zdnet.com##p strong:has-text(/^Also/):upward(p)
+! adult_annoyance_list.txt has been combined
+! with annoyance_list.txt as of as of October 6 2024
 @@/contents/images-banners/*$domain=yeswegays.com
 ||bonertraffic.mobi^$third-party
 ||cc.boyfriendtv.com/bftv/*.jpg$image
