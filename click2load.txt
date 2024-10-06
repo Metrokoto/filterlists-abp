@@ -54,5 +54,5 @@
 ||view.genial.ly$subdocument,domain=~genial.ly
 ||volume.vox-cdn.com/embed/$subdocument,domain=~vox-cdn.com
 ||w.soundcloud.com/player/$subdocument,domain=~soundcloud.com
-||youtube-nocookie.com/embed^$subdocument,domain=youtube-nocookie.com|~bing.com|~google.com|~duckduckgo.com|~video.search.yahoo.com
+||youtube-nocookie.com^$subdocument,domain=youtube-nocookie.com|~bing.com|~google.com|~duckduckgo.com|~video.search.yahoo.com
 ||youtube.com^$subdocument,domain=~youtube.com|~bing.com|~chatreplay.stream|~google.com|~duckduckgo.com|~video.search.yahoo.com
