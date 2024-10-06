@@ -551,7 +551,7 @@ www.amazon.*###universal-detail-ilm,.a-spacing-none.a-section > .sg-row,.AdHolde
 ||quizlet.com/$subdocument,third-party
 ||reddit.com/mediaembed/$subdocument,third-party
 ||s3.amazonaws.com/embed.animoto.com/$subdocument,third-party
-||scribd.com/embeds/$subdocument,domain=~scribd.com
+||scribd.com/embeds/$subdocument,third-party
 ||stay22.com/embed/$subdocument,third-party
 ||static.vidgyor.com/player/$subdocument,third-party
 ||traderjoexyz.com/$subdocument,third-party
