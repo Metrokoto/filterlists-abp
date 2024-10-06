@@ -1,0 +1,3 @@
+!!
+! adult_annoyance_list.txt has been combined with annoyance_list.txt as of as of October 6 2024
+!!
