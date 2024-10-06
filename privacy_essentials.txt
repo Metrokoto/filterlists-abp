@@ -509,6 +509,9 @@ www.amazon.*###universal-detail-ilm,.a-spacing-none.a-section > .sg-row,.AdHolde
 ||neverbounce.com^$third-party
 ||outbrain.com^$third-party,domain=~sphere.com
 @@||youtube.com/redirect?event=*q=http$document
+!!
+! click2load.txt has been combined with privacy_essentials.txt as of as of October 6 2024
+!!
 ||airtable.com/embed*$subdocument,domain=~airtable.com
 ||art19.com/shows/$subdocument,domain=~art19.com
 ||bandcamp.com/EmbeddedPlayer/$subdocument,domain=~bandcamp.com
